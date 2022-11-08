@@ -24,13 +24,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 1%;
+    padding: 4px 1%;
 
 } 
 
 .container_menu {
     display: flex;
     justify-content: space-evenly;
+    padding-top:0;
 }
 .logoSito {
     display: block;
@@ -46,6 +47,7 @@ ul li {
     transition: 0.03s;
 } ul li:hover {
     border-bottom: 4px solid #000;
+    margin: -6px 0;
 }
 ul li a {
     text-align: center;
@@ -59,4 +61,5 @@ ul li a {
 } .searchBar:hover {
     width: 2%;
     border-bottom: 4px solid #000;
+    margin: -6px 0;
 }
