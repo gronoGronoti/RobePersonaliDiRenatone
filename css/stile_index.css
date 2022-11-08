@@ -4,7 +4,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 body {
@@ -24,26 +23,39 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 2%;
+    padding: 0 1%;
 
-} header li {
+} 
+
+.container_menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+.logoSito {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 28px;
+}
+
+ul li {
     list-style: none;
     display: inline-block;
     padding: 20px 20px;
     transition: 0.03s;
-} header li:hover {
+} ul li:hover {
     border-bottom: 4px solid #000;
 }
-
-header li a {
-    text-decoration: none;
+ul li a {
     text-align: center;
+    text-decoration: none;
+    color: #000;
 }
 
 .searchBar {
-    width: 2.2%;
+    width: 1.7%;
     transition: 0.03s;
 } .searchBar:hover {
-    width: 2.8%;
+    width: 2%;
     border-bottom: 4px solid #000;
 }
