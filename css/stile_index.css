@@ -58,8 +58,8 @@ ul li a {
 .searchBar {
     width: 1.7%;
     transition: 0.03s;
-} .searchBar:hover {
-    width: 2%;
-    border-bottom: 4px solid #000;
     margin: -6px 0;
+} .searchBar:hover {
+    padding: 18px 0;
+    border-bottom: 4px solid #000;
 }
