@@ -11,6 +11,7 @@
     <title>Esercizio 2.1</title>
 
     <!-- 
+        2.1
     Ora create la home page della vostra prima applicazione web. Questa deve contenere:
     -   Un titolo principale
     -   Un paragrafo con le informazioni generali
@@ -19,32 +20,67 @@
         Per ognuna fornite un titolo ed almeno un paragrafo.
     -   Create un indice
     NB non preoccupatevi della grafica! Quella la vedremo a tempo debito (CSS)
+        
+        2.3
+        Arricchisci la pagina precedente utilizzando in modo corretto i seguenti
+        tag, per marcare le corrispondenti parti del testo:
+            -h1, ..., h6
+            -p
+            -formatting tags
+        Il testo deve contenere una sezione principale, almeno tre sotto-sezioni
+        formate ognuna da tre o più paragrafi. All'interno dei paragrafi, è
+        necessario marcare qualche parte di testo con i formatting tags.
+        Il "cosa" si scrive è relativamente importante.
+
+        2.4
+        Includi, nella pagina HTML che hai creato, anche:
+        -   Dei link a delle risorse esterne
+        -   Uno o più elenchi puntati
+        -   Uno o più elenchi numerati.
+        -   Un'immagine, impostando l'attributo alt e title.
     -->
 </head>
 
 <body>
-    <h1>La scorreggia sul grand canyon</h1>
+    <h1>Il grande sito</h1>
 
     <ul class="indice" id="indice">
         <li><a href="#descrizione_libro">descrizione libro</a></li>
-        <li><a href="#autore">l'autore</a></li>
-        <li><a href="#il_libro">il libro</a></li>
-        <li><a href="#acquista_ora">acquista ora</a></li>
+        <li><a href="#">asamoah</a></li>
+        <li><a href="#">mbappé</a></li>
+        <li><a href="#">buffon</a></li>
+        <li><a href="#">iniesta</a></li>
     </ul>
 
     <article class="descrizione_libro" id="descrizione_libro">
+        <h2>Roba sul libro</h2>
+        <ul>
+            <li><a href="#autore">l'autore</a></li>
+            <li><a href="#il_libro">il libro</a></li>
+            <li><a href="#acquista_ora">acquista ora</a></li>
+        </ul>
 
         <section class="autore" id="autore">
-            <h3>gronpoti is a creative former chef at own restaurant who is obsessed with the murder of his ex-girlfriend Crystal.</h3>
+            <h3>"<strong>gronpoti</strong> is a creative former chef at own restaurant who is obsessed with the murder of his ex-girlfriend Crystal."</h3>
+
+            <div class="contatti" id="contatti">
+                <ul>
+                    <li><a href=#>Contatto 1</a></li>
+                    <li><a href=#>Contatto 2</a></li>
+                    <li><a href=#>Contatto 3</a></li>
+                    <li><a href=#>Contatto 4</a></li>
+                </ul>
+            </div>
+
         </section>
 
         <section class="il_libro" id="il_libro">
-            <h3>Di che parla sto libro:</h3>
+            <h4>Di che parla sto libro:</h4>
             <p>
-                Although the cause of death was reported as cancer, gronpoti, a 69-year-old former chef at own restaurant,<br>
-                is convinced that his ex-girlfriend, Crystal Howard, was murdered.<br>
+                Although the cause of death was reported as cancer, gronpoti, <b>a 69-year-old former chef at own restaurant</b>,<br>
+                is convinced that his ex-girlfriend, <mark>Crystal Howard, was murdered.</mark><br>
                 He is italian who defines himself as straight. He finished school and then left academia.<br>
-                Physically, gronpoti is not in great shape. He needs to lose quite a lot of weight.<br>
+                Physically, gronpoti <b>is not in great shape</b>. He needs to lose quite a lot of weight.<br>
                 He is tall with pale skin, brown hair and brown eyes.<br>
                 gronpoti's best friend is a former chef at own restaurant called Coral Shaw. They get on well most of the time.<br>
                 He also hangs around with a former chef at own restaurant called Elena White. They enjoy football together.<br>
@@ -52,7 +88,7 @@
         </section>
 
         <section class="acquista_ora" id="acquista_ora">
-            <h3>Dove posso comprarlo?</h3>
+            <h4>Dove posso comprarlo?</h4>
             <button><a href="https://www.youtube.com/">compra ora!!!</a></button>
             <aside class="metodi_pagamento" id="metodi_pagamento">
                 <p>(disponibili paypal, bitcoin o baratto con un oggetto di egual valore)</p>
