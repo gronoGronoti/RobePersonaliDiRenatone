@@ -40,16 +40,16 @@ header {
     height: 28px;
 }
 
-ul li {
+.container_menu ul li {
     list-style: none;
     display: inline-block;
     padding: 20px 23px;
     transition: 0.03s;
-} ul li:hover {
+} .container_menu ul li:hover {
     border-bottom: 4px solid #000;
     margin: -6px 0;
 }
-ul li a {
+.container_menu ul li a {
     text-align: center;
     text-decoration: none;
     color: #000;
