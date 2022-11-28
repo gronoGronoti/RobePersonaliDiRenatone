@@ -15,3 +15,8 @@
 
   http://www.imparareaprogrammare.it
 */
+console.log("\npari-o-dispari.js");
+
+// let num = Math.random() * (100-1)+1;
+let num = 42;
+console.log("Numero:", num, "==>", (num%2==0)? 0:1);
