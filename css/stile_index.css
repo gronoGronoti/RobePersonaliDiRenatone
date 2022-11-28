@@ -63,22 +63,3 @@ header {
     padding: 18px 0;
     border-bottom: 4px solid #000;
 }
-
-.zona_esercizi ul li {
-    list-style: none;
-    display: inline-block;
-    margin-top: 65px;
-    margin-right: 35px;
-}
-.zona_esercizi ul li a {
-    text-decoration: none;
-    text-align: center;
-
-    padding: 20px 23px;
-
-    border: 13px ridge #ffffff;
-    background: rgba(255,255,255,0.5);
-    box-shadow: 10px 10px 31px -6px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 31px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 31px -6px rgba(0,0,0,0.75);
-}
