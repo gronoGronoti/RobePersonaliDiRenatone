@@ -14,3 +14,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+console.log("\nvinci-tu.js");
+
+const buttaDado = (n) => {
+  return Math.floor(Math.random()*(6-1)+1);
+}
+let nTiri = 3, puntTu = puntCpu = 0;
+
+for(let i=1; i<=nTiri; i++) {
+  puntTu += buttaDado(i);
+  puntCpu += buttaDado(i);
+}
+
+if(puntTu > puntCpu) console.log("Hai vinto! Hai totalizzato "+puntTu+" punti.");
+else console.log("Hai perso! Hai totalizzato "+puntTu+" punti.");
