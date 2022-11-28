@@ -25,39 +25,47 @@
 console.log("\nmenu-dei-dolci.js");
 let dolci = ['Tiramisù', 'Torta della nonna', 'Cheesecake alla nutella', 'Macedonia'];
 
+const rl = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
 const sceltaDeiDolci = (n, arr) => {
   let tortaScelta = "";
 
   switch(n) {
-    case 1:
+    case '1':
       tortaScelta = arr[0];
-      console.log("Hai scelto:", tortaScelta);
+      console.log("\nHai scelto:", tortaScelta);
       break;
     
-    case 2:
+    case '2':
       tortaScelta = arr[1];
-      console.log("Hai scelto:", tortaScelta);
+      console.log("\nHai scelto:", tortaScelta);
       break;
     
-    case 3:
+    case '3':
       tortaScelta = arr[2];
-      console.log("Hai scelto:", tortaScelta);
+      console.log("\nHai scelto:", tortaScelta);
       break;
     
-    case 4:
+    case '4':
       tortaScelta = arr[3];
-      console.log("Hai scelto:", tortaScelta);
+      console.log("\nHai scelto:", tortaScelta);
       break;
     
     default:
-      console.log("Quella torta non è nel menù...");
+      console.log("\nQuella torta non è nel menù...");
       break;
   }
 
   return tortaScelta;
 }
 
-
 console.log("MENU:\n1. Tiramisù\n2. Torta della nonna\n3. Cheesecake alla nutella\n4. Macedonia");
 
-let risposta = sceltaDeiDolci(3, dolci);
+rl.question("Che cosa desideri? ", function(res) {
+  sceltaDeiDolci(res, dolci);
+
+  rl.close();
+})
