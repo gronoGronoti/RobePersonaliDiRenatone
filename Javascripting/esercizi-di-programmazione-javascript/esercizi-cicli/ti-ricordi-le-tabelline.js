@@ -8,3 +8,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+console.log("\nti-ricordi-le-tabelline.js");
+
+const calcolaTab = (n) => {
+  for(let i=0; i<=10; i++) {
+    console.log((n*i)+"; ");
+  }
+}
+
+calcolaTab(6);
