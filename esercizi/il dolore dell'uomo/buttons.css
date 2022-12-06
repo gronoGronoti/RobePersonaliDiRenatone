@@ -1,0 +1,79 @@
+.yt-subscribe {
+    background: rgb(200, 0, 0);
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    padding: /*su - dx - giù - sx*/ 10px 16px 10px 16px;
+    cursor: pointer;
+
+    transition: opacity 0.1s;
+} .yt-subscribe:hover {
+    opacity: 50%;
+} .yt-subscribe:active {
+    opacity: 25%;
+}
+
+.twitch-join {
+    background: rgb(255, 255, 255, 0);
+    color: rgb(100, 100, 255);
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgb(100, 100, 255);
+
+    /*il padding dovrebbe essere uguale a quello di subscribe,
+    ma il border si prende un pixel in più.
+    quindi diminuisco il padding di su e giù di 1.*/
+    padding: /*su - dx - giù - sx*/ 9px 16px 9px 16px;
+    margin: /*su - dx - giù - sx*/ 0 10px 0 10px;
+    cursor: pointer;
+
+    transition: all 0.1s;
+} .twitch-join:hover {
+    background: rgb(100, 100, 255);
+    color: white;
+} .twitch-join:active {
+    opacity: 50%;
+}
+
+.twitter-tweet {
+    background: rgb(100, 100, 255);
+    color: white;
+    border-style: none;
+    border-radius: 30px;
+    font-weight: bolder;
+    padding: /*su - dx - giù - sx*/ 9px 16px 9px 16px;
+    cursor: pointer;
+
+    transition: all 0.1s;
+} .twitter-tweet:hover {
+    opacity: 75%;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 15%);
+}
+
+.amazon-add-to-cart {
+    background: rgb(255, 216, 20);
+    color: black;
+    border-style: none;
+    border-radius: 20px;
+    padding: /*su - dx - giù - sx*/ 8px 24px 8px 24px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    transition: opacity .05s;
+} .amazon-add-to-cart:hover {
+    opacity: 50%;
+}
+
+.amazon-buy-now {
+    background: rgb(255, 164, 28);
+    color: black;
+    border-style: none;
+    border-radius: 20px;
+    padding: /*su - dx - giù - sx*/ 8px 30px /*'giù, sx' omessi perché sono uguali a 'su, dx'*/;
+    cursor: pointer;
+
+    transition: opacity .05s;
+} .amazon-buy-now:hover {
+    opacity: 50%;
+}
