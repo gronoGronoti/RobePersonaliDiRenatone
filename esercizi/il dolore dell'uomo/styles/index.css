@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: white;
+}
+p, a, button, ul li {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background: #242424;
+    margin:  /*su - dx - giù - sx*/ 0;
+    padding: /*su - dx - giù - sx*/ 0;
+}
+.site-body {
+    margin: 40px 80px;
+}
+
+header {
+    background: #181818;
+    border-bottom: 3px solid rgba(0, 118, 0, 100%);
+    padding: 0;
+}
+
+header div .navbar {
+    margin:  /*su - dx - giù - sx*/ 0;
+    padding: /*su - dx - giù - sx*/ 0;
+} header div .navbar li {
+    display: inline-block;
+}
+
+.active {
+    background-color: rgba(255,255,255, 20%);
+    padding: 9px 20px;
+}
+.not-active a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 9px 20px;
+
+    transition: all .10s;
+} .not-active a:hover {
+    background-color: rgba(255,255,255, 12%);
+    color:rgb(33, 100, 255);
+} .not-active a:active {
+    background-color: rgba(255,255,255, 5%);
+}

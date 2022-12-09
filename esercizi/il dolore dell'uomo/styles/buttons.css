@@ -1,3 +1,7 @@
+button {
+    font-family: Roboto, Arial, sans-serif;
+}
+
 .yt-subscribe {
     background: rgb(200, 0, 0);
     color: white;
@@ -76,4 +80,53 @@
     transition: opacity .05s;
 } .amazon-buy-now:hover {
     opacity: 50%;
+}
+
+.button-4j {
+    background: green;
+    color: white;
+    border-style: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 50%);
+
+    transition: opacity .05s;
+} .button-4j:hover {
+    opacity: 75%;
+} .button-4j:active {
+    opacity: 50%;
+    box-shadow: 0 0 0 0;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.button-4k {
+    margin: /*su - dx - giù -sx*/ 0 10px 0 10px;
+    background: green;
+    color: white;
+    border-style: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: padding .5s, opacity .15s;
+} .button-4k:hover {
+    padding: 20px 35px;
+} .button-4k:active {
+    opacity: 50%;
+}
+
+.button-4i {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+
+    transition: padding 0.15s, margin 0.15s;
+} .button-4i:hover {
+    padding: 8px 25px;
+    margin: 0 0;
 }
