@@ -1,0 +1,135 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/*********************************************************/
+
+.search-bar-7d {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightgray;
+}
+
+/*********************************************************/
+
+.google-search {
+    width: 586px /*grandezza totale di google-search-bar*/;
+    border: 2px solid red;
+}
+.google-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.google-search-bar {
+    border-style: none;
+    border-radius: 30px;
+    border-color: lightgray;
+    display: inline-flex;
+
+    transition: box-shadow .10s, border-style .10s;
+} .google-search-bar:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 35%);
+}
+.search-bar-7e {
+    height: 40px;
+    width: 450px;
+    padding: 0 18px;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 30px 0 0 30px;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+} 
+.search-buttons {
+    background: rgb(229, 229, 229);
+    padding: 7px 10px;
+    height: 26px;
+    width: 76px;
+    align-items: center;
+
+    border-width: thin;
+    border-style: solid;
+    border-radius: 0 30px 30px 0;
+    border-color: rgb(229, 229, 229);
+}
+.ggl-search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    transition: color .10s;
+} .ggl-search-btn:hover {
+    color: rgb(24, 133, 170);
+}
+
+/*********************************************************/
+
+.linkedin-submit {
+    width: 450px;
+    border: 2px solid red;
+}
+.linkedin-submit p {
+    color:  rgb(164, 159, 159);
+    margin-bottom: 6px;
+}
+.search-bar-7f {
+    padding-left: 10px;
+    height: 30px;
+    width: 434px;
+}
+
+/*********************************************************/
+
+.first-form {
+    max-width: 350px;
+    padding: 5px 10px;
+    border: 2px solid red;
+}
+.first-form-name, .first-form-surname {
+    border: none;
+    border-radius: 2px;
+    box-shadow: inset 0 0 3px rgba(0,0,0, 35%);
+    padding: 8px 10px;
+    width: 150.5px;
+    background: rgb(228, 228, 228);
+}
+.first-form-name {
+    margin-right: 5px;
+}
+
+.first-form-email {
+    border: none;
+    border-radius: 2px;
+    margin: 9px 0;
+    padding: 8px 10px;
+    background: rgb(228, 228, 228);
+    box-shadow: inset 0 0 3px rgba(0,0,0, 35%);
+    width: 330px;
+}
+.first-form-btn {
+    border: none;
+    border-radius: 7px;
+    margin: 0;  
+    padding: 8px 10px;
+    width: 350px;
+
+    background-color: rgb(68, 68, 250);
+    font-weight: bold;
+    color: white;
+
+    transition: background-color .07s;
+    cursor: pointer;
+} .first-form-btn:hover {
+    background-color: rgb(105, 105, 254);
+} .first-form-btn:active {
+    background-color: rgb(135, 135, 255);
+}
