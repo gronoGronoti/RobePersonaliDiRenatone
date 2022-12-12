@@ -39,25 +39,26 @@ p, a, button {
     border-radius: 36px;
     margin-right: 12px;
 }
+
+.yt-video-details-grid {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+}
 .yt-video-details-1 {
-    display: inline-block;
     vertical-align: top;
     margin: 0;
-    width: 45px;
 }
-
 .yt-video-details-2 {
-    display: inline-block;
-    width: 200px;
     font-weight: lighter;
 }
+
 .video-title {
     font-size: 14px;
     overflow: hidden;
+    margin: 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    margin: 0;
     line-height: 21px;
 }
 .video-author, .video-descr {
