@@ -10,6 +10,10 @@ p, a, button {
 
 /*********************************************************/
 
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .yt-video {
     vertical-align: top;
     display: inline-block;
