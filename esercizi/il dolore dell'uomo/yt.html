@@ -7,22 +7,103 @@
     <title>Youtube cinese</title>
 
     <link rel="stylesheet" href="styles/yt.css">
+
+    <script type="text/javascript">
+        const openInNewTab = (url) => {
+            window.open(url, "_blank").focus();
+        }
+    </script>
 </head>
 <body>
     <input class="search-bar" type="text" placeholder="Cerca...">
-    <div class="yt-video">
-        <img class="thumbnail" src="images/mqdefault_6s.webp">
-        
-        <div class="yt-video-details-1">
-            <img class="yt-propic" src="images/download.jpeg">
-            <p class="video-title"><strong>Questo è un testo. Mi sono cacato nelle mutande. sesso sesso sesso sesso sesso</strong></p>
-        </div>
-        
-        <div class="yt-video-details-2">
-            <p class="video-author">'Questo è un canale'</p>
-            <p class="video-descr">1.6M di visualizzazioni &#183; 4 anni fa</p>
+    <div class="videos">
+
+        <div class="yt-video">
+            <img class="thumbnail" src="images/mqdefault_6s.webp" onclick="openInNewTab('https://www.youtube.com');">
+            
+            <!-- questa si chiama nested layouts technique
+            la metà in basso della thumbnail si suddivide in più sezioni,
+            1 -> foto profilo
+            2 -> dettagli del video -->
+            <div class="yt-video-details-1">
+                <img class="yt-propic" src="images/download.jpeg">
+            </div>
+            
+            <div class="yt-video-details-2">
+                <p class="video-title" onclick="openInNewTab('https://www.youtube.com');">
+                    <strong>
+                        Questo è un testo. Mi sono cacato nelle mutande. sesso sesso sesso sesso sesso
+                    </strong>
+                </p>
+
+                <p class="video-author">
+                    <a href="#" target="_blank">'Questo è un canale'</a>
+                </p>
+
+                <p class="video-descr">
+                    1.6 Mln di visualizzazioni &#183; 4 anni fa
+                </p>
+            </div>
+    
         </div>
 
+        <div class="yt-video">
+            <img class="thumbnail" src="images/mqdefault_6s.webp" onclick="openInNewTab('https://www.youtube.com');">
+            
+            <!-- questa si chiama nested layouts technique
+            la metà in basso della thumbnail si suddivide in più sezioni,
+            1 -> foto profilo
+            2 -> dettagli del video -->
+            <div class="yt-video-details-1">
+                <img class="yt-propic" src="images/download.jpeg">
+            </div>
+            
+            <div class="yt-video-details-2">
+                <p class="video-title" onclick="openInNewTab('https://www.youtube.com');">
+                    <strong>
+                        Questo è un testo. base
+                    </strong>
+                </p>
+
+                <p class="video-author">
+                    <a href="#" target="_blank">'Questo è un canale'</a>
+                </p>
+                
+                <p class="video-descr">
+                    6.9 Mld di visualizzazioni &#183; 12 anni fa
+                </p>
+            </div>
+    
+        </div>
+        
+        <div class="yt-video">
+            <img class="thumbnail" src="images/mqdefault_6s.webp" onclick="openInNewTab('https://www.youtube.com');">
+            
+            <!-- questa si chiama nested layouts technique
+            la metà in basso della thumbnail si suddivide in più sezioni,
+            1 -> foto profilo
+            2 -> dettagli del video -->
+            <div class="yt-video-details-1">
+                <img class="yt-propic" src="images/download.jpeg">
+            </div>
+            
+            <div class="yt-video-details-2">
+                <p class="video-title" onclick="openInNewTab('https://www.youtube.com');">
+                    <strong>
+                        Tecnostruttura
+                    </strong>
+                </p>
+
+                <p class="video-author">
+                    <a href="#" target="_blank">'Questo è tuo nonno'</a>
+                </p>
+                
+                <p class="video-descr">
+                    1.6 sputi &#183; Ieri
+                </p>
+            </div>
+    
+        </div>
     </div>
 </body>
 </html>
