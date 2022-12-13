@@ -53,6 +53,9 @@ button {
 } .twitter-tweet:hover {
     opacity: 75%;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 15%);
+} .twitter-tweet:active {
+    opacity: 50%;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 10%);
 }
 
 .amazon-add-to-cart {

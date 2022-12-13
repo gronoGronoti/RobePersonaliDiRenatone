@@ -6,6 +6,6 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
 }
 
-body {
-    margin: 10px 28px;
+p, a {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }

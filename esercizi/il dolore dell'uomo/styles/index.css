@@ -1,0 +1,67 @@
+body {
+    background: #242424;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+    color: white;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.navbar li {
+    float: left;
+} .navbar .contact {
+    background: rgb(0, 118, 0);
+    float: right;
+} .navbar .contact:hover {
+    color: white;
+    background: rgb(0, 170, 0);
+} .navbar .contact:active {
+    color: white;
+    background: rgb(0, 200, 0);
+}
+  
+.navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    transition: background-color .15s, color .15s;
+} .navbar li a:hover {
+    background-color: #363636;
+    color: rgb(140, 140, 255);
+}
+  
+.navbar .active {
+    background-color: #363636;
+}
+
+/******************************************************/
+
+main {
+    margin: 80px 70px;
+}
+
+/******************************************************/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #181818;
+    opacity: 60%;
+    text-align: center;
+}

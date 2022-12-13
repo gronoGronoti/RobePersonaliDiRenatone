@@ -1,0 +1,117 @@
+.es-9a-9b, .es-9c-9d {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.esercizio-9a {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-color: red;
+    margin-right: 25px;
+}
+
+.esercizio-9b {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    display: inline-block;
+    background-color: green;
+}
+
+.esercizio-9c {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid lightgray;
+    padding: 20px;
+} .esercizio-9c p {
+    margin-top: 0;
+}
+
+.esercizio-9d {
+    display: inline-block;
+    width: 302px;
+    background-color: #181818;
+    padding: 20px;
+} .esercizio-9d a {
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+
+    transition: all .10s;
+} .esercizio-9d a:hover {
+    color: rgb(200, 200, 200);
+} 
+.esercizio-9d p {
+    color: gray;
+    font-size: 13px;
+    margin: 0;
+} .esercizio-9d h3 {
+    margin-top: 0;
+}
+
+/******************************************************/
+
+.esercizio-7g {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
+}
+.esercizio-7g img {
+    width: 36px;
+    object-fit: cover;
+    border-radius: 36px;
+    vertical-align: middle;
+}
+.esercizio-7g input {
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 225px;
+    vertical-align: middle;
+}
+.esercizio-7g .twitter-tweet {
+    vertical-align: middle;
+}
+
+/******************************************************/
+
+.esercizio-9f {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
+    display: inline-block;
+    margin-right: 12px;
+    border-radius: 3px;
+}
+.esercizio-9f img {
+    width: 190px;
+    border-radius: 3px 3px 0 0;
+}
+.esercizio-9f .nome {
+    font-weight: bold;
+    margin-top: 9px;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+.esercizio-9f .frens {
+    color: lightgray;
+    margin-top: 0;
+    font-size: 13px;
+} .esercizio-9f .add-fren {
+    background: rgb(13, 99, 146);
+    color: white;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0;
+    font-size: 12px;
+} 
+.es9f-parte2 {
+    padding: 15px;
+    padding-top: 0;
+}
+
+.massa-di-gatti {
+    display: inline-block;
+}
