@@ -7,15 +7,30 @@
     <title>Youtube cinese</title>
 
     <link rel="stylesheet" href="styles/yt.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <script type="text/javascript">
         const openInNewTab = (url) => {
-            window.open(url, "_blank").focus();
+            window.open(url, "_blank");
         }
     </script>
 </head>
 <body>
-    <input class="search-bar" type="text" placeholder="Cerca...">
+    <div class="header">
+        <div class="left-sec">
+            <span class="material-symbols-outlined">menu</span>
+            <img src="images/logos/YouTube-Icon-Full-Color-Logo.wine.svg" class="yt-logo">
+        </div>
+        <div class="mid-sec">
+            <input class="search-bar" type="text" placeholder="Cerca...">
+            <button class="search-btn"><span class="material-symbols-outlined">search</span></button>
+            <button class="mic-search-btn"><span class="material-symbols-outlined">mic</span></button>
+        </div>
+        <div class="right-sec">right</div>
+
+
+    </div>
+
     <div class="videos">
 
         <div class="yt-video">
@@ -107,6 +122,97 @@
                 </div>
             </div>
         </div>
+
+        <div class="yt-video">
+            <img class="thumbnail" src="images/mqdefault_6s.webp" onclick="openInNewTab('https://www.youtube.com');">
+            
+            <!-- questa si chiama nested layouts technique
+            la metà in basso della thumbnail si suddivide in più sezioni,
+            1 -> foto profilo
+            2 -> dettagli del video -->
+            <div class="yt-video-details-grid">
+                <div class="yt-video-details-1">
+                    <img class="yt-propic" src="images/download.jpeg">
+                </div>
+
+                <div class="yt-video-details-2">
+                    <p class="video-title" onclick="openInNewTab('https://www.youtube.com');">
+                        <strong>
+                            Questo è un testo. Mi sono cacato nelle mutande. sesso sesso sesso sesso sesso
+                        </strong>
+                    </p>
+    
+                    <p class="video-author">
+                        <a href="#" target="_blank">'Questo è un canale'</a>
+                    </p>
+    
+                    <p class="video-descr">
+                        1.6 Mln di visualizzazioni &#183; 4 anni fa
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="yt-video">
+            <img class="thumbnail" src="images/mqdefault_6s.webp" onclick="openInNewTab('https://www.youtube.com');">
+            
+            <!-- questa si chiama nested layouts technique
+            la metà in basso della thumbnail si suddivide in più sezioni,
+            1 -> foto profilo
+            2 -> dettagli del video -->
+            <div class="yt-video-details-grid">
+                <div class="yt-video-details-1">
+                    <img class="yt-propic" src="images/download.jpeg">
+                </div>
+
+                <div class="yt-video-details-2">
+                    <p class="video-title" onclick="openInNewTab('https://www.youtube.com');">
+                        <strong>
+                            Questo è un testo. base
+                        </strong>
+                    </p>
+    
+                    <p class="video-author">
+                        <a href="#" target="_blank">'Questo è un canale'</a>
+                    </p>
+    
+                    <p class="video-descr">
+                        1.6 Mln di visualizzazioni &#183; 4 anni fa
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="yt-video">
+            <img class="thumbnail" src="images/mqdefault_6s.webp" onclick="openInNewTab('https://www.youtube.com');">
+            
+            <!-- questa si chiama nested layouts technique
+            la metà in basso della thumbnail si suddivide in più sezioni,
+            1 -> foto profilo
+            2 -> dettagli del video -->
+            <div class="yt-video-details-grid">
+                <div class="yt-video-details-1">
+                    <img class="yt-propic" src="images/download.jpeg">
+                </div>
+
+                <div class="yt-video-details-2">
+                    <p class="video-title" onclick="openInNewTab('https://www.youtube.com');">
+                        <strong>
+                            L'ostubeschismo
+                        </strong>
+                    </p>
+    
+                    <p class="video-author">
+                        <a href="#" target="_blank">'Questo è un canale'</a>
+                    </p>
+    
+                    <p class="video-descr">
+                        1.6 Mln di visualizzazioni &#183; 4 anni fa
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
