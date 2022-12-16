@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,600;1,600&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hanken Grotesk', Arial, sans-serif;
+    color: #fff;
+}
+p, a, button {
+    font-family: 'Jost', Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+strong {
+    font-weight: 600;
+    color: #fff;
+}
+
+body {
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.generic-button {
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 29px;
+    box-shadow: 0 3px 10px 0px rgba(145, 192, 255, 0.5),
+        inset -6px -6px 16px 0px rgba(145, 192, 255, 0.6),
+        inset 0px 11px 28px 0px rgb(255, 255, 255);
+    
+    padding: 18px;
+    border: 1px solid rgba(145, 192, 255, 0.6);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all .20s;
+} .generic-button:hover {
+    padding: 18px 22px;
+    font-size: 19px;
+} .generic-button:active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
