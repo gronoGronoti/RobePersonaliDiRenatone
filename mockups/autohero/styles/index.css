@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'GRAD' 0,
+  'opsz' 48;
+
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue','Open Sans', sans-serif;
+}
+p, a, button {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+body {
+    margin: 0;
+    background: #f7f7f7;
+}
+
+/*******************************************************/
+
+.search-filters {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.src-fltr-left-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.src-filter {
+    font-size: 12px;
+    padding: 1px 12px;
+    color: #4a4a4a;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0;
+    margin-right: 10px;
+
+    display: flex;
+    align-items: center;
+} .src-filter:active {
+    background-color: rgba(74, 74, 74, 0.051);
+}
+.src-fltr-right-section .src-filter {
+    margin-right: 0;
+}
+.src-filter p {
+    margin-right: 5px;
+}

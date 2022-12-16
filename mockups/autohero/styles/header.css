@@ -1,0 +1,66 @@
+.header {
+    background: rgb(233, 110, 39);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    box-shadow: 0 2px 5px #c9c7c7;
+}
+
+.header .site-logo {
+    background: #fff;
+    padding: 18px 21px;
+}
+
+.header-buttons {
+    margin-left: 50px;
+    margin-right: 43px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    color: #f9f9f9;
+    margin: 0 12px;
+
+    transition: border-bottom .20s, color .20s;
+} .header-buttons a:hover {
+    border-bottom: 5px solid #f9f9f9;
+    color: #fff;
+}
+.header-buttons .active {
+    background-color: rgb(241, 126, 59);
+}
+.header-buttons .services-span {
+    display: flex;
+    align-items: center;
+}
+
+.user-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 290px;
+    margin-right: 35px;
+} .user-buttons span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 27px;
+    margin-top: 3px;
+    margin-left: -1px;
+} .user-btn {
+    margin: 8px;
+    width: 40px;
+    border: none;
+    background: none;
+    background-color: none;
+    cursor: pointer;
+
+    transition: background-color .15s;
+} .user-btn:active {
+    background-color: rgb(241, 126, 59);
+}
+
+/*******************************************************/

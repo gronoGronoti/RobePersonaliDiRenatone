@@ -1,0 +1,110 @@
+footer {
+    margin-top: 30px;
+    background: #fff;
+    box-shadow: 0 -2px 5px #c9c7c7;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+footer ul li p {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 0;
+    line-height: 30px;
+    color: #003e72;
+}
+footer ul li a {
+    font-size: 11px;
+    color: #4a4a4a;
+    text-decoration: none;
+    line-height: 30px;
+
+    transition: color .15s;
+} footer ul li a:hover {
+    color: rgb(14, 98, 255);
+} footer ul li a:active {
+    color: rgb(104, 157, 255);
+}
+
+/*******************************************************/
+
+.footer-sect1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 75px;
+}
+.footer-sect1 .q1 {
+    width: 320px;
+    height: 175px;
+}
+
+/*******************************************************/
+
+.footer-sect-divisor {
+    margin-top: 3px;
+    border-top: 1px solid #e5e5e5;
+}
+.footer-sect2 {
+    height: 60px;
+
+    margin: 0 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+} .footer-sect2 p {
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-right: 15px;
+} .footer-sect2 .pay {
+    width: 50px;
+    height: 25px;
+    margin-right: 10px;
+} .footer-sect2 .social {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.footer-sect2 .paypal {
+    width: 60px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.footer-sect2 .available-payment-methods {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-sect2 .footer-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*******************************************************/
+
+.footer-sect3 {
+    background: rgb(233, 110, 39);
+    color: #fff;
+    font-size: 13px;
+} .footer-sect3 .q2 {
+    margin: 0 75px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}  .footer-sect3 .q3 a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}

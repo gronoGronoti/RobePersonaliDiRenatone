@@ -1,0 +1,78 @@
+.site-promo {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: top;
+    margin: 10px 0;
+}
+
+/*******************************************************/
+
+.cars-on-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+
+    padding: 15px 30px;
+}
+.car-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8px 0 0 0;
+}
+
+/*******************************************************/
+
+.car-on-sale {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px 15px 18px 15px;
+
+    cursor: pointer;
+} .car-on-sale:hover {
+    box-shadow: 0 0 7px #c9c7c7;
+}
+
+.car-on-sale img {
+    max-width: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 7px #c9c7c7;
+} .car-on-sale h3 {
+    color: #003e72;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 4px;
+} .car-on-sale p {
+    margin: 0;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 27px;
+} .car-on-sale .car-price-per-mo {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    line-height: 22px;
+}
+
+.car-price {
+    text-align: right;
+} 
+
+.car-on-sale .car-redirect {
+    background: rgb(233, 110, 39);
+    color: #fff;
+    width: 100%;
+    height: 48px;
+    margin-top: 7px;
+
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    
+    cursor: pointer;
+} .car-on-sale .car-redirect:hover {
+    background-color: rgb(241, 126, 59);
+} .car-on-sale .car-redirect:active {
+    background-color: rgb(255, 148, 86);
+}
