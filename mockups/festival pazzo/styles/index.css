@@ -14,31 +14,71 @@ strong {
     font-weight: 600;
     color: #fff;
 }
-
+.first-hr {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin: 0 40px 40px 40px;
+}
 body {
-    background: #41295a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #16356e, #477bdc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
 }
 
-.generic-button {
-    backdrop-filter: blur(3px);
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 29px;
-    box-shadow: 0 3px 10px 0px rgba(145, 192, 255, 0.5),
-        inset -6px -6px 16px 0px rgba(145, 192, 255, 0.6),
-        inset 0px 11px 28px 0px rgb(255, 255, 255);
-    
-    padding: 18px;
-    border: 1px solid rgba(145, 192, 255, 0.6);
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
+/******************************************************************************************/
 
-    transition: all .20s;
-} .generic-button:hover {
-    padding: 18px 22px;
-    font-size: 19px;
-} .generic-button:active {
-    background-color: rgba(255, 255, 255, 0.5);
+.main-festival-banner {
+    background: url(../img/bg/mio-fratello.png);
+    height: 890px;
+    border-bottom: 20px solid #325ba7;
+    box-shadow: 0 20px 30px #16356e;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.main-festival-banner .festival-banner-presentation {
+    font-size: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 80px;
+
+    text-shadow: 0 2px 2px #242424;
+}
+.main-festival-banner .festival-banner-details {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    text-shadow: 0 2px 2px #242424;
+}
+.main-festival-banner .banner-button {
+    border-radius: 80px;
+    border: none;
+    margin: 0;
+    min-width: 150px;
+    height: 55px;
+    cursor: pointer;
+    margin: 0 10px;
+
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 32px;
+    box-shadow: 35px 35px 68px 0px rgba(36, 36, 36, 0.5),
+        inset -8px -8px 16px 0px rgba(36, 36, 36, 0.6),
+        inset 0px 11px 28px 0px rgb(255, 255, 255);
+} .main-festival-banner .banner-button:hover {
+    background: rgba( 36, 36, 36, 0.7 );
+} .main-festival-banner .banner-button:active {
+    background: rgba( 36, 36, 36, 1 );
+}
+
+.banner-button p {
+    font-size: 22px;
+    margin: 0;
+}
+
+/******************************************************************************************/
+
+.under-main-banner {
+    margin: 100px;
 }

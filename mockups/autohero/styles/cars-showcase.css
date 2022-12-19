@@ -1,6 +1,7 @@
 .site-promo {
     width: 100%;
-    height: 160px;
+    min-height: 160px;
+    max-height: 230px;
     object-fit: cover;
     object-position: top;
     margin: 10px 0;
