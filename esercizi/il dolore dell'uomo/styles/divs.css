@@ -81,7 +81,7 @@
 .esercizio-9f {
     box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
     display: inline-block;
-    margin-right: 12px;
+    margin-right: 30px;
     border-radius: 3px;
 }
 .esercizio-9f img {
@@ -113,5 +113,113 @@
 }
 
 .massa-di-gatti {
+    display: flex;
+    align-items: start;
+}
+
+/******************************************************/
+
+.esercizio-13a {
+    display: flex;
+}
+
+.es13a-pt-1 {
+    background: lightcoral;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+.es13a-pt-1 p {
+    text-align: center;
+    color: white;
+    background: black;
+}
+.es13a-pt-2 {
+    width: 200px;
+    background: lightblue;
+}
+
+.esercizio-13b {
+    width: 300px;
+    display: flex;
+}
+.es13b-pt-1 {
+    width: 100px;
+    background: lightcoral;
+}
+.es13b-pt-2 {
+    width: 200px;
+    background: lightblue;
+} .es13b-pt-2 p {
+    margin: 0;
+}
+
+.es13b-pt-2-2 {
+    display: flex;
+    justify-content: space-between;
+} .es13b-pt-2-2 p {
+    margin: 0;
+    margin-bottom: 16px;
+    color: white;
+    background: black;
+}
+
+.esercizio-13c {
     display: inline-block;
+    background: #f9f9f9;
+    padding: 13px;
+    width: 400px;
+    box-shadow: 0 0 5px rgba(0,0,0, 20%);
+}
+.e13c-mail {
+    flex: 1;
+} .e13c-mail p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: lightgray;
+}
+
+.e13c-incoming-mail {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+} .e13c-mail-details {
+    flex: 1;
+    cursor: pointer;
+}
+
+.e13c-sender-propic {
+    width: 45px;
+    margin: 0;
+    padding: 0 10px 0 5px;
+}
+.e13c-sender-propic img {
+    width: 100%;
+    border-radius: 22.5px;
+    margin: 0;
+}
+
+.e13c-sender-and-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .e13c-sender {
+    font-weight: bold;
+    margin: 0;
+} .e13c-time {
+    color: lightgray;
+    margin: 0;
+    font-size: 14px;
+}
+
+.e13c-title-and-contents p {
+    margin: 0;
+    font-size: 15px;
+} .e13c-title {
+    line-height: 20px;
+    font-weight: bold;
+} .e13c-content {
+    color: lightgray;
 }
