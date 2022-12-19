@@ -21,6 +21,8 @@
     transition: all .20s;
 } .fa:hover {
     background-color: rgba(255, 255, 255, 0.055);
+} .fa:active {
+    background-color: rgba(255, 255, 255, 0.275);
 }
 
 /******************************************************************************************/
@@ -57,4 +59,6 @@
     transition: all .20s;
 } .header-redirects:hover {
     background-color: rgba(255, 255, 255, 0.055);
+} .header-redirects:active {
+    background-color: rgba(255, 255, 255, 0.275);
 }
