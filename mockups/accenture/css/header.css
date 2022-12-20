@@ -1,0 +1,104 @@
+
+/**********************************************************************/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-site-logo {
+    width: 100px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+/**********************************************************************/
+
+.header-section-top {
+    display: flex;
+    height: 62px;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: white;
+}
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+}
+
+.header-site-logo img {
+    width: 100%;
+}
+
+.header-top-left a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 15px;
+    font-size: 14px;
+
+    transition: font-weight .05s, border-bottom .05s;
+} .header-top-left a:hover {
+    border-bottom: 3px solid black;
+} .header-top-left a:active {
+    font-weight: bold;
+}
+
+.header-top-right {
+    display: grid;
+    grid-template-columns: 60px 85px;
+}
+.header-search-button {
+    padding: 15.5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    transition: border-bottom .05s;
+} .header-search-button:hover {
+    border-bottom: 3px solid black;
+}
+.lang-selector img {
+    width: 32px;
+}
+.lang-selector span {
+    font-size: 16px;
+    margin-left: 5px;
+}
+.lang-selector {
+    display: flex;
+    align-items: center;
+    padding: 19px;
+    border-left: 1px solid #e2e2e2;
+    cursor: pointer;
+
+    transition: border-bottom .05s;
+} .lang-selector:hover {
+    border-bottom: 3px solid black;
+}
+/**********************************************************************/
+
+.header-section-bottom {
+    flex: 1;
+    padding-left: 20px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e2e2e2;
+}
+.header-bottom-links {
+    display: flex;
+    align-items: center;
+}
+.header-bottom-links a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 15px;
+    font-size: 14px;
+
+    transition: color .05s;
+} .header-bottom-links a:hover {
+    color: rgb(55, 55, 55);
+}

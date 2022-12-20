@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400&display=swap');
+
+body {
+    background: #f9f9f9;
+    margin: 0;
+    margin-top: 120px;
+}
+p, a, button {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+
+    margin: 0;
+}
+
+main {
+    height: 3000px;
+}
+
+/**********************************************************************/
+
+.panorama-slideshow {
+    background: url(../img/9641981e5fc754e309190b19c8fd52a6.jpg);
+    object-fit: cover;
+    height: 522px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.panorama-slideshow h1, .panorama-slideshow h3, .panorama-slideshow a {
+    color: white;
+    margin: 0;
+    text-shadow: 0 1px 4px black;
+}
+.panorama-slideshow a {
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 8px;
+}
+.panorama-slideshow h1 {
+    font-size: 76px;
+    margin-bottom: 8px;
+}
+.panorama-slideshow h3 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+.panorama-redirect span {
+    color: white;
+    margin: 0;
+    text-shadow: 0 1px 4px black;
+}
+.panorama-slideshow .panorama-redirect {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 25px;
+    padding: 20px 30px;
+    cursor: pointer;
+
+    transition: background-color .15s;
+} .panorama-slideshow .panorama-redirect:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+} .panorama-slideshow .panorama-redirect:active {
+    background-color: rgba(255, 255, 255, 0.45);
+}
