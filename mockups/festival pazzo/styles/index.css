@@ -27,6 +27,8 @@ body {
 
 .main-festival-banner {
     background: url(../img/bg/mio-fratello.png);
+    min-width: 1014px;
+    max-width: 1800px;
     min-height: 620px;
     max-height: 890px;
     border-bottom: 20px solid #325ba7;
