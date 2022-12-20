@@ -1,10 +1,14 @@
 body {
     height: 3000px;
-    padding: 70px 80px;
+    margin-left: 300px;
+    margin-top: 70px;
     background: #36393F;
 }
 p, a, button {
     font-family: "Helvetica Neue", Arial, sans-serif;
+}
+main p, a, button {
+    color: white;
 }
 .material-symbols-outlined {
     font-variation-settings:
@@ -71,6 +75,7 @@ p, a, button {
 }
 .homepage-button {
     display: inline-block;
+    cursor: pointer;
 }
 .fa-skype {
     margin: 0;
@@ -79,7 +84,7 @@ p, a, button {
     color: white;
     font-size: 30px;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-    background-color: blue;
+    background-color: rgb(77, 77, 255);
     text-align: center;
 }
 .discord-hr {
@@ -131,10 +136,11 @@ p, a, button {
     background-color: rgb(60, 63, 70);
 }
 .ds-channel-category {
-    padding: 5px;
+    padding-top: 12px;
+    padding-bottom: 0;
     display: flex;
     align-items: center;
-    margin-top: 7px;
+    margin-bottom: 0;
 }
 .ds-channel-category p, span {
     color: #96989D;
@@ -145,9 +151,12 @@ p, a, button {
 
 .ds-channels-list {
     color: #96989D;
-    margin: -7px;
+    margin: -9px;
+    margin-left: 8px;
     list-style-type: '# ';
     font-size: 20px;
+    cursor: pointer;
+
 } .ds-channels-list p {
     margin: 10px 0;
     font-size: 16px;
@@ -156,4 +165,27 @@ p, a, button {
     transition: color .05s;
 } .ds-channels-list p:hover {
     color: white;
+}
+
+/************************************************************/
+
+.fixed-practice-1, .fixed-practice-2 {
+    position: fixed;
+    width: 200px;
+    height: 150px;
+    color: white;
+}
+.fixed-practice-1 {
+    background: blue;
+}
+.fixed-practice-2 {
+    background: green;
+    top: 221px;
+}  
+.absolute-practice {
+    position: absolute;
+    background: red;
+    color: white;
+    left: 10px;
+    top: 10px;
 }
