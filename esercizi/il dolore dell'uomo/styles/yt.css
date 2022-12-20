@@ -100,15 +100,17 @@ p, a, button, input {
     display: flex;
     align-items: center;
     flex: 1;
+    min-width: 130px;
     max-width: 590px;
     margin: 0 20px 0 70px;
 }
 .mid-sec .search-bar {
-    padding: 8px 15px;
+    padding: 9px 15px;
+    min-width: 130px;
     border-radius: 15px 0 0 15px;
     border: 1px solid #2c2c2c;
     background-color: #272727;
-    font-size: 18px;
+    font-size: 16px;
     flex: 1;
 }
 .mid-sec .search-btn, .mic-search-btn {
