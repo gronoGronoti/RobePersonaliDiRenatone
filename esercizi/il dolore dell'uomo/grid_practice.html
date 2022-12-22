@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="styles/grid.css">
 </head>
 <body>
+
+    <p>
+        display: grid;<br>
+        grid-template-columns: 100px 100px;
+    </p>
     <div style="
         display: grid;
         grid-template-columns: 100px 100px;">
@@ -16,39 +21,62 @@
         <div style="background: lightcoral;">div 2<p>text</p></div>
     </div><br>
 
+    <p>
+        display: grid;<br>
+        grid-template-columns: 100px 100px 200px;
+    </p>
     <div style="
         display: grid;
         grid-template-columns: 100px 100px 200px;">
-        <div style="background: lightblue;">div 1<p>cock</p></div>
-        <div style="background: lightcoral;">div 2<p>text</p></div>
-        <div style="background: lightblue;">div 3<p>osasuna</p></div>
-        <div style="background: lightcoral;">div 4<p>ostubeschi</p></div>
+        <div style="background: lightblue;">div 1<p>p</p></div>
+        <div style="background: lightcoral;">div 2<p>p</p></div>
+        <div style="background: lightblue;">div 3<p>p</p></div>
+        <div style="background: lightcoral;">div 4<p>p</p></div>
     </div><br>
 
+    <p>
+        display: grid;<br>
+        grid-template-columns: 100px 100px;
+    </p>
     <div style="
         display: grid;
         grid-template-columns: 100px 100px;">
-        <div style="background: lightblue;">div 1<p>cock</p></div>
-        <div style="background: lightcoral;">div 2<p>text</p></div>
-        <div style="background: lightblue;">div 3<p>osasuna</p></div>
-        <div style="background: lightcoral;">div 4<p>ostubeschi</p></div>
+        <div style="background: lightblue;">div 1<p>p</p></div>
+        <div style="background: lightcoral;">div 2<p>p</p></div>
+        <div style="background: lightcoral;">div 3<p>p</p></div>
+        <div style="background: lightblue;">div 4<p>p</p></div>
     </div><br>
 
+    <p>
+        display: grid;<br>
+        grid-template-columns: 100px 1fr;
+    </p>
     <div style="
         display: grid;
         grid-template-columns: 100px 1fr;">
-        <div style="background: lightblue;">div 1<p>cock</p></div>
-        <div style="background: lightcoral;">div 2<p>1 fo real</p></div>
+        <div style="background: lightblue;">div 1<p>p</p></div>
+        <div style="background: lightcoral;">div 2<p>1fr</p></div>
     </div><br>
 
+    <p>
+        display: grid;<br>
+        grid-template-columns: 100px 1fr 2fr;
+    </p>
     <div style="
         display: grid;
         grid-template-columns: 100px 1fr 2fr;">
-        <div style="background: lightblue;">div 1<p>cock</p></div>
-        <div style="background: lightcoral;">div 2<p>1 fo real</p></div>
-        <div style="background: lightblue;">div 3<p>2 fo real</p></div>
+        <div style="background: lightblue;">div 1<p>p</p></div>
+        <div style="background: lightcoral;">div 2<p>1fr</p></div>
+        <div style="background: lightblue;">div 3<p>2fr</p></div>
     </div><br>
 
+    <p>
+        display: grid;<br>
+        grid-template-columns: 1fr 1fr 1fr;<br>
+        
+        column-gap: 20px;<br>
+        row-gap: 20px;<br>
+    </p>
     <div style="
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -62,6 +90,89 @@
         <div style="height: 300px; background: lightcoral">1fr</div>
         <div style="height: 300px; background: lightblue">1fr</div>
         <div style="height: 300px; background: lightcoral">1fr</div>
-    </div> 
+    </div><br>
+
+    <hr><br>
+
+    <div style="
+        display: grid;
+        grid-template-columns: 200px 75px;
+        ">
+        <div style="background: lightblue">200px</div>
+        <div style="background: lightcoral">75px</div>
+    </div><br>
+
+    <div style="
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        width: 350px
+        ">
+        <div style="background: lightblue">50px</div>
+        <div style="background: lightcoral">1fr</div>
+        <div style="background: lightblue">75px</div>
+    </div><br>
+
+    <div style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+        ">
+        <div style="background: lightblue">col1</div>
+        <div style="background: lightblue">col2</div>
+        <div style="background: lightblue">col3</div>
+        <div style="background: lightblue">col4</div>
+        <div style="background: lightblue">col1</div>
+        <div style="background: lightblue">col2</div>
+        <div style="background: lightblue">col3</div>
+        <div style="background: lightblue">col4</div>
+    </div><br>
+    
+    <hr><br>
+
+    <div class="fb-frens" style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        ">
+        <div class="fb-fren">
+            <img class="fren-pic" src="images/Cat03.jpg">
+
+            <div class="fren-details">
+                <p class="fren-name">Paolino Paperino</p>
+                <div class="common-frens">
+                    <img src="images/download.jpeg">
+                    <p>Due amici in comune</p>
+                </div>
+                <button>Aggiungi amicio</button>
+            </div>
+        </div>
+
+        <div class="fb-fren">
+            <img class="fren-pic" src="images/Cat03.jpg">
+
+            <div class="fren-details">
+                <p class="fren-name">Paolino Paperino</p>
+                <div class="common-frens">
+                    <img src="images/download.jpeg">
+                    <p>Due amici in comune</p>
+                </div>
+                <button>Aggiungi amicio</button>
+            </div>
+        </div>
+
+        <div class="fb-fren">
+            <img class="fren-pic" src="images/Cat03.jpg">
+
+            <div class="fren-details">
+                <p class="fren-name">Paolino Paperino</p>
+                <div class="common-frens">
+                    <img src="images/download.jpeg">
+                    <p>Due amici in comune</p>
+                </div>
+                <button>Aggiungi amicio</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,58 @@
+p {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.fb-fren {
+    display: inline-block;
+    width: 220px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+
+    transition: box-shadow .15s;
+} .fb-fren:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+}
+
+.fren-details {
+    padding: 10px;
+    padding-top: 5px;
+}
+.fren-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.fren-name {
+    margin: 5px 0;
+}
+
+.common-frens {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    align-items: center;
+    
+    margin-bottom: 10px;
+}
+.common-frens img {
+    width: 36px;
+    border-radius: 36px;
+}
+.common-frens p {
+    margin: 0;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #325ba7;
+    color: white;
+}
