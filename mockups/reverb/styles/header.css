@@ -1,0 +1,154 @@
+.site-header-top,
+.site-header-bottom, .instrument-categories, .website-media, .expand-news,
+.header-search-bar,
+.header-top-buttons, 
+.header-user-buttons,
+.head-btn {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    border-bottom: 1px solid #f0f0f0;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+header hr {
+    margin: 0;
+    border: 0.5px solid lightgray;
+}
+.site-logo {
+    width: 115px;
+    display: inline-block;
+    margin: 0;
+    flex-shrink: 0;
+
+} .site-logo img {
+    width: 100%;
+}
+
+.site-header-top {
+    margin: 0 23px;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.header-search-bar {
+    margin: 0 20px;
+    flex: 1;
+    min-width: 75px;
+    max-width: 460px;
+}
+.header-search-bar .search-bar {
+
+    flex: 1;
+    min-width: 75px;
+    padding: 7.75px;
+    font-size: 16px;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.header-search-bar button {
+    background: none;
+    margin-left: -1px;
+    cursor: pointer;
+    
+    padding: 3px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+} .header-search-bar button:active {
+    background-color: #f0f0f0;
+}
+.header-search-bar button span {
+    margin: 0 5px;
+    margin-top: 2px;
+}
+
+.sell-instruments {
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 3px solid gray;
+    padding: 6px 12px;
+    font-size: 16px;
+    background: none;
+    flex-shrink: 0;
+    cursor: pointer;
+
+} .sell-instruments:hover {
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+.header-user-buttons {
+    margin: 0 17px;
+}
+.header-user-buttons .head-btn {
+    flex-direction: column;
+    padding: 5px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+
+} .header-user-buttons .head-btn:hover {
+    color: orange;
+}
+.head-btn span {
+    font-size: 27px;
+    width: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.head-btn p {
+    margin: 3px 0;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-user-settings a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 8px;
+    font-size: 13px;
+    border:none;
+    border-radius: 10px;
+} .header-user-settings a:hover {
+    color: orange;
+}
+
+/*******************************************************************/
+
+.site-header-bottom {
+    margin: 10px 23px;
+    justify-content: space-between;
+}
+.site-header-bottom a, .site-header-bottom span {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+} .site-header-bottom a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+.instrument-categories a {
+    margin-right: 20px;
+}
+.website-media a {
+    margin-left: 20px;  
+}
+.expand-news a {
+    margin: 0;
+}
+.expand-news span {
+    margin-bottom: 3px;
+}
+.expand-news {
+    margin-left: 20px;
+    cursor: pointer;
+} .expand-news:hover {
+    color: orange;
+    text-decoration: underline;
+}
