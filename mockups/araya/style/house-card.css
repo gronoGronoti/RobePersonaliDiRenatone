@@ -1,6 +1,8 @@
 .house-card {
     box-shadow: 0 4px 13px rgba(0, 0, 0, 20%);
     cursor: pointer;
+    position: relative;
+    z-index: 0;
 
     padding-bottom: 15px;
     border-radius: 25px;
@@ -12,13 +14,21 @@
     box-shadow: 0 5px 23px rgba(0, 0, 0, 32%);
 }
 
-.house-card img {
+.house-card .house-overview {
     width: 100%;
     object-fit: cover;
 
     border-radius: 25px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+.most-rented {
+    width: 39px;
+    position: absolute;
+
+    right: -5px;
+    top: -5px;
 }
 
 /********************************************************************/
