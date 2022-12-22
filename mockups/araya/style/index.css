@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    margin-top: 465px;
     background: linear-gradient(45deg, rgba(249,249,249,1) 0%, rgba(255,255,255,1) 100%);
 }
 
@@ -12,8 +13,7 @@ main {
     margin-top: 10px;
 }
 main hr {
-    margin: 0 20px;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +68,6 @@ hr {
     row-gap: 50px;
     column-gap: 30px;
 }
-
 
 /*****************************FOOTER*********************************/
 

@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="homepage-head">
+        <div id="scrolling-header" class="homepage-head">
             <div class="homepage-header">
                 <img class="site-logo" src="img/logo/logo-white.png">
                 <span id="user" class="material-symbols-outlined">account_circle</span>
@@ -47,7 +47,7 @@
                         <p class="house-data">3</p>
                         <span class="material-symbols-outlined">bed</span>  
                         <p class="house-data-dot">&#183;</p>
-                        <p class="house-data">3</p>
+                        <p class="house-data">2</p>
                         <span class="material-symbols-outlined">wc</span> 
                     </div>
         
@@ -55,7 +55,6 @@
                         <button class="more-details-btn">€700/mo</button>
                     </div>
                 </div>
-        
             </div>
 
             <div class="house-card">
@@ -69,7 +68,7 @@
                         <p class="house-data">3</p>
                         <span class="material-symbols-outlined">bed</span>  
                         <p class="house-data-dot">&#183;</p>
-                        <p class="house-data">3</p>
+                        <p class="house-data">2</p>
                         <span class="material-symbols-outlined">wc</span> 
                     </div>
         
@@ -77,7 +76,6 @@
                         <button class="more-details-btn">€700/mo</button>
                     </div>
                 </div>
-        
             </div>
 
             <div class="house-card">
@@ -91,7 +89,7 @@
                         <p class="house-data">3</p>
                         <span class="material-symbols-outlined">bed</span>  
                         <p class="house-data-dot">&#183;</p>
-                        <p class="house-data">3</p>
+                        <p class="house-data">2</p>
                         <span class="material-symbols-outlined">wc</span> 
                     </div>
         
@@ -99,73 +97,6 @@
                         <button class="more-details-btn">€700/mo</button>
                     </div>
                 </div>
-        
-            </div>
-
-            <div class="house-card">
-                <img src="img/houses/photo-1593696140826-c58b021acf8b.jpeg">
-                <div class="house-info">
-                    <hr>
-                    <h2 class="house-location">Paris, Paris</h2>
-                    <p class="house-data">Available from 31/12/2021 to 31/1/2022</p>
-                    
-                    <div class="house-details">
-                        <p class="house-data">3</p>
-                        <span class="material-symbols-outlined">bed</span>  
-                        <p class="house-data-dot">&#183;</p>
-                        <p class="house-data">3</p>
-                        <span class="material-symbols-outlined">wc</span> 
-                    </div>
-        
-                    <div class="card-buttons">
-                        <button class="more-details-btn">€700/mo</button>
-                    </div>
-                </div>
-        
-            </div>
-
-            <div class="house-card">
-                <img src="img/houses/photo-1593696140826-c58b021acf8b.jpeg">
-                <div class="house-info">
-                    <hr>
-                    <h2 class="house-location">Paris, Paris</h2>
-                    <p class="house-data">Available from 31/12/2021 to 31/1/2022</p>
-                    
-                    <div class="house-details">
-                        <p class="house-data">3</p>
-                        <span class="material-symbols-outlined">bed</span>  
-                        <p class="house-data-dot">&#183;</p>
-                        <p class="house-data">3</p>
-                        <span class="material-symbols-outlined">wc</span> 
-                    </div>
-        
-                    <div class="card-buttons">
-                        <button class="more-details-btn">€700/mo</button>
-                    </div>
-                </div>
-        
-            </div>
-
-            <div class="house-card">
-                <img src="img/houses/photo-1593696140826-c58b021acf8b.jpeg">
-                <div class="house-info">
-                    <hr>
-                    <h2 class="house-location">Paris, Paris</h2>
-                    <p class="house-data">Available from 31/12/2021 to 31/1/2022</p>
-                    
-                    <div class="house-details">
-                        <p class="house-data">3</p>
-                        <span class="material-symbols-outlined">bed</span>  
-                        <p class="house-data-dot">&#183;</p>
-                        <p class="house-data">3</p>
-                        <span class="material-symbols-outlined">wc</span> 
-                    </div>
-        
-                    <div class="card-buttons">
-                        <button class="more-details-btn">€700/mo</button>
-                    </div>
-                </div>
-        
             </div>
         </div>
 
@@ -180,6 +111,7 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript">
         let currentYear = new Date().getFullYear();
         document.getElementById("current-year").innerHTML = currentYear;
@@ -187,6 +119,16 @@
         const openInNewTab = (url) => {
             window.open(url, "_blank");
         }
+
+        $(window).on('scroll', function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop >= 130) {
+                $('#scrolling-header').stop().animate({height: "80px"},200);
+            }
+            else {
+                $('#scrolling-header').stop().animate({height: "465px"},200);   
+            }
+        });
     </script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0; height: 1000px;">
+    <header>
+        <div id="header" style="
+            background-color: red;
+            color: white;
+            height: 465px;
+
+            position: fixed;
+            width: 100%;
+            ">
+            header
+        </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 50) {
+                $('#header').stop().animate({height: "80px"},200);
+            }
+            else {
+                $('#header').stop().animate({height: "465px"},200);   
+            }
+        });
+    </script>
+</body>
+</html>
