@@ -120,6 +120,10 @@
             window.open(url, "_blank");
         }
 
+        // ciulata da stackoverflow, diminuisce l'height di #scrolling-header
+        // man mano che scrolli la pagina verso il basso;
+        // viceversa la aumenta scrollando verso l'alto.
+        // non so come funziona scrollTop >= 130
         $(window).on('scroll', function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop >= 130) {
