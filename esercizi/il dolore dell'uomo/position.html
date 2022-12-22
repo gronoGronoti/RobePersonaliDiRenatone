@@ -22,6 +22,7 @@
         right: 0;
 
         height: 70px;
+        z-index: 2;
     ">header</div>
 
     <div style="
@@ -35,7 +36,31 @@
         right: 0;
 
         width: 70px;
-    ">sidebar</div>
+    ">sidebar
+    
+    <!-- absolute in fixed -->
+    <div style="
+        background-color: red;
+        color: white;
+        position: absolute;
+
+        right: 0;
+        top: 0;
+        z-index: 1;
+
+    ">X</div>
+    </div>
+
+    <div style="
+        background-color: red;
+        color: white;
+        position: absolute;
+
+        right: 10px;
+        top: 70px;
+        z-index: 1;
+
+    ">absolute</div>
 
     <div style="
         background-color: lightblue;
@@ -47,7 +72,20 @@
         background-color: lightcoral;
         height: 200px;
         width: 200px;
-    ">div 2</div>
+        position: relative;
+    ">div 2
+
+        <div style="
+            background-color: red;
+            color: white;
+            position: absolute;
+
+            right: 10px;
+            top: 70px;
+            z-index: 1;
+
+        ">absolute in relative</div>
+    </div>
 
 </body>
 </html>
