@@ -30,20 +30,20 @@ header hr {
 .site-header-top {
     margin: 0 23px;
     height: 70px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .header-search-bar {
-    margin: 0 20px;
+    margin-right: 40px;
     flex: 1;
     min-width: 75px;
-    max-width: 460px;
+    max-width: 570px;
 }
 .header-search-bar .search-bar {
 
     flex: 1;
     min-width: 75px;
-    padding: 7.75px;
+    padding: 7px;
     font-size: 16px;
 
     border: 1px solid gray;
@@ -56,7 +56,7 @@ header hr {
     margin-left: -1px;
     cursor: pointer;
     
-    padding: 3px;
+    padding: 2px;
     border: 1px solid gray;
     border-radius: 5px;
     border-top-left-radius: 0;
@@ -70,7 +70,6 @@ header hr {
 }
 
 .sell-instruments {
-    margin-left: 20px;
     border-radius: 20px;
     border: 3px solid gray;
     padding: 6px 12px;
@@ -122,8 +121,8 @@ header hr {
 /*******************************************************************/
 
 .site-header-bottom {
-    margin: 10px 23px;
-    justify-content: space-between;
+    margin: 10px;
+    justify-content: space-evenly;
 }
 .site-header-bottom a, .site-header-bottom span {
     text-decoration: none;
