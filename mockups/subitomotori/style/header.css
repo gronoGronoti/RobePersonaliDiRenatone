@@ -5,7 +5,7 @@ header {
 
 .subito-user-links {
     padding: 15px;
-    padding-top: 125px;
+    padding-top: 100px;
     padding-bottom: 10px;
     display: flex;
     align-items: center;
@@ -54,6 +54,7 @@ header {
     margin-left: 5px;
     font-size: 16px;
     font-weight: 700;
+    color: #2650ff;
 }
 
 .user-logins {
