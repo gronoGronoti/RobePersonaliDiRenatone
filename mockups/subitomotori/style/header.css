@@ -1,0 +1,71 @@
+header {
+    margin: 0 125px;
+    background: #fff;
+}
+
+.subito-user-links {
+    padding: 15px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+} .subito-user-links a {
+    color: gray;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 14px;
+} .subito-user-links a:hover {
+    text-decoration: underline;
+}
+
+.site-logo {
+    width: 250px;
+    cursor: pointer;
+    display: inline-block;
+} .site-logo img {
+    width: 100%;
+}
+
+.site-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-ad-btn {
+    background-color: rgba(38, 81, 255, 0.1);
+    color: #2650ff;
+    margin: 0 10px;
+    margin-right: 0;
+
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+} .add-ad-btn:hover {
+    border: 1px solid #335cff;
+}
+.add-ad {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+} .add-ad p {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2650ff;
+}
+
+.user-logins {
+    display: flex;
+    align-items: center;
+} .user-logins a {
+    text-decoration: none;
+    margin: 0 10px;
+    margin-left: 15px;
+} .user-logins a:hover {
+    text-decoration: underline;
+} .user-logins .login {
+    font-weight: 700;
+}
