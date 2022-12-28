@@ -40,6 +40,7 @@ header {
     color: black;
     padding: 20px 15px;
     font-size: 14px;
+    border-bottom: 3px solid transparent;
 
     transition: font-weight .05s, border-bottom .05s;
 } .header-top-left a:hover {
@@ -57,6 +58,7 @@ header {
     background: none;
     border: none;
     cursor: pointer;
+    border-bottom: 3px solid transparent;
     
     transition: border-bottom .05s;
 } .header-search-button:hover {
@@ -75,6 +77,7 @@ header {
     padding: 19px;
     border-left: 1px solid #e2e2e2;
     cursor: pointer;
+    border-bottom: 3px solid transparent;
 
     transition: border-bottom .05s;
 } .lang-selector:hover {
