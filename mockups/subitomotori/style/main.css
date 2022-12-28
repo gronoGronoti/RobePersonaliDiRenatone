@@ -12,8 +12,7 @@ main {
     background-color: #fff;
     margin: 0 125px;
     padding: 20px;
-
-    height: 3000px;
+    height: 2000px;
 }
 
 .main-hr {
@@ -36,6 +35,7 @@ p, pre, a, button, input, h1, h2, h3, h4, h5, h6 {
 /***********************************************************************/
 
 .product-fixed-bar {
+
     position: fixed;
     z-index: 10;
     bottom: 0;

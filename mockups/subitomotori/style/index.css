@@ -1,7 +1,16 @@
-body {
-    margin: 0;
+html {
+    display: table;
+    margin: auto;
     background: rgb(255,255,255);
     background-image: linear-gradient(0, rgba(247,248,251,1) 100%, rgba(255,255,255,1) 0%);
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+
+    max-width: 1280px;
+    margin: 0;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,6 +44,8 @@ body {
     display: flex;
     z-index: 2;
     top: 8px;
+    left: 47%;
+    text-align: center;
     padding: 0 5px;
     border-radius: 3px;
 
@@ -217,7 +228,8 @@ body {
     width: 100%;
 }
 .prod-description p {
-    font-size: 15.7px;
+    font-size: 15.9px;
+    font-weight: 300;
     display: inline-block;
     margin: 0;
 }
