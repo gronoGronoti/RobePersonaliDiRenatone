@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <div class="homepage-head">
+        <div id="scrolling-header" class="homepage-head">
             <div class="homepage-header">
                 <img class="site-logo" src="img/logo/logo-white.png">
                 <span id="user" class="material-symbols-outlined">account_circle</span>
@@ -231,17 +231,18 @@
             window.open(url, "_blank");
         }
 
-        // ciulata da stackoverflow, diminuisce l'height di #scrolling-header
+        // rubata da stackoverflow, diminuisce l'height di #scrolling-header
         // man mano che scrolli la pagina verso il basso;
         // viceversa la aumenta scrollando verso l'alto.
         // non so come funziona scrollTop >= 130
         $(window).on('scroll', function () {
             var scrollTop = $(window).scrollTop();
-            if (scrollTop >= 130) {
-                $('#scrolling-header').stop().animate({height: "80px"},200);
+            console.log(scrollTop)
+            if (scrollTop >= (466/1.5)) {
+                $('#scrolling-header').stop().animate({height: "70px"}, 35);
             }
             else {
-                $('#scrolling-header').stop().animate({height: "465px"},200);   
+                $('#scrolling-header').stop().animate({height: "465px"}, 50);   
             }
         });
     </script>
