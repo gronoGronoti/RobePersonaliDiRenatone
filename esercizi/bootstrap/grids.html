@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <p>Col classiche - container, col</p>
+    <div class="container">
+        <div class="row">
+            <div class="col p-2 bg-danger text-white border border-dark">
+                col 1
+            </div> 
+
+            <div class="col p-2 bg-danger text-white border border-dark">
+                col 2
+            </div> 
+        </div>
+    </div> <br>
+
+    <p>Col numerate - container, col di varie dimensioni (man mano che restringo la pagina diventano responsive)</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 p-2 bg-danger text-white border border-dark">
+                col-4
+            </div>
+
+            <div class="col-5 p-2 bg-danger text-white border border-dark">
+                col-5
+            </div> 
+
+            <div class="col-2 p-2 bg-danger text-white border border-dark">
+                col-2
+            </div> 
+
+            <div class="col-1 p-2 bg-danger text-white border border-dark">
+                col-1
+            </div>
+        </div>
+        <p>col-4 + col-5 + col-2 + col-1 => 4+5+2+1 = 12</p>
+    </div> <br>
+
+    <p>Col responsive - container, col-sm/md/lg di varie dimensioni (il totale deve ammontare a 12)</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 p-2 bg-danger text-white border border-dark">
+                col-md-4
+            </div>
+
+            <div class="col-md-5 p-2 bg-danger text-white border border-dark">
+                col-md-5
+            </div> 
+
+            <div class="col-md-3 p-2 bg-danger text-white border border-dark">
+                col-md-3
+            </div> 
+        </div><br>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-4 p-2 bg-danger text-white border border-dark">
+                col-lg-3 col-md-4
+            </div>
+
+            <div class="col-lg-3 col-md-4 p-2 bg-danger text-white border border-dark">
+                col-lg-3 col-md-4
+            </div> 
+
+            <div class="col-lg-3 col-md-4 p-2 bg-danger text-white border border-dark">
+                col-lg-3 col-md-4
+            </div> 
+
+            <div class="col-lg-3 col-md-4 p-2 bg-danger text-white border border-dark">
+                col-lg-3 col-md-4
+            </div> 
+        </div>
+        <p>"Rispondendo" alle dimensioni della pagina, le col si sistemano una sotto l'altra</p>
+    </div> <br>
+
+    <p class="display-6">La CHALENGE 1!!</p>
+    <p class="lead">Da desktop, vedo 6 col; da tablet, 4 col; da mobile un col sopra l'altro. (l'ho fallita)</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 p-2 bg-danger text-white border border-dark">
+                col-lg-2 col-md-3
+            </div>
+            <div class="col-lg-2 col-md-3 p-2 bg-danger text-white border border-dark">
+                col-lg-2 col-md-3
+            </div>
+            <div class="col-lg-2 col-md-3 p-2 bg-danger text-white border border-dark">
+                col-lg-2 col-md-3
+            </div>
+            <div class="col-lg-2 col-md-3 p-2 bg-danger text-white border border-dark">
+                col-lg-2 col-md-3
+            </div>
+            <div class="col-lg-2 col-md-3 p-2 bg-danger text-white border border-dark">
+                col-lg-2 col-md-3
+            </div>
+            <div class="col-lg-2 col-md-3 p-2 bg-danger text-white border border-dark">
+                col-lg-2 col-md-3
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
