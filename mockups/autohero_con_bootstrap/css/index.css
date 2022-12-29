@@ -1,0 +1,31 @@
+.promo-banner {
+    width: 100%;
+    background-image: url(../img/pad-campaign-1024-min.jpeg);
+    padding: 10px;
+    margin: 10px 0;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} .promo-banner h1, .promo-banner p {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+.promo-banner h1 {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+} .promo-banner p, .promo-banner a {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+} .promo-banner a {
+    text-decoration: none;
+    color: white;
+
+    transition: opacity .15s;
+} .promo-banner a:hover {
+    text-decoration: underline;
+} .promo-banner a:active {
+    opacity: 70%;
+}

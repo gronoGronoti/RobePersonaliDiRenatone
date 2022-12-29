@@ -1,0 +1,83 @@
+.site-header {
+    background-color: rgb(243, 113, 33);
+    display: flex;
+}
+header .container-fluid {
+    /*sembra che i container fluid si prendano un tot di spazio che a me non serve*/
+    padding: 0;
+}
+header a, p {
+    margin: 0;
+}
+.navbar {
+    padding: 0;
+}
+
+.site-logo {
+    display: inline-block;
+    padding: 13px 20px;
+    background-color: white;
+}
+
+.site-components, .site-sections, .user-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-components {
+    margin: 0 20px;
+    flex: 1;
+}
+
+.site-sections .nav-link {
+    padding: 11px 15px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid transparent;
+
+    transition: border-bottom .15s;
+} .site-sections .nav-link:hover {
+    border-bottom: 3px solid white;
+} .site-sections .nav-link:active {
+    color: rgba(245, 245, 245, 50%);
+}
+.site-sections .nav-link.active {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.site-sections .services-slider {
+    /*lo slider dove sta scritto "servizi"*/
+    display: flex;
+    align-items: center;
+}
+
+.user-links .material-symbols-outlined {
+    color: white;
+    font-weight: 700;
+    font-size: 34px;
+    padding: 8.5px;
+
+    text-shadow: 0 0 1px solid white;
+    transition: background-color, color .15s;
+} .user-links .material-symbols-outlined:hover {
+    background-color: white;
+    color: rgb(243, 113, 33);
+}
+
+.dropdown-item {
+    padding: 10px;
+    padding-left: 15px;
+    margin-right: 50px;
+}
+.dropdown-item:hover {
+    background: none;
+    color: rgb(243, 113, 33);
+}
+
+.navbar-toggler {
+    border: none;
+    border-color: white;
+} .navbar-toggler:active {
+    border: none;
+}
