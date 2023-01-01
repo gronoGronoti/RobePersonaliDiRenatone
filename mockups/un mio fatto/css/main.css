@@ -9,8 +9,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
     font-family: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
+    text-shadow: 0 0 10px #141E30;
     font-weight: 600;
     color: whitesmoke;
+}
+.lead {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px #141E30;
 }
 
 body {
