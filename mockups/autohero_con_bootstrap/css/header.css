@@ -14,9 +14,17 @@ header a, p {
 }
 
 .site-logo {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: 13px 20px;
     background-color: white;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .site-components, .site-sections, .user-links {
@@ -31,6 +39,7 @@ header a, p {
 
 .site-sections .nav-link {
     padding: 11px 15px;
+    margin-right: 10px;
     text-decoration: none;
     color: white;
     border-bottom: 3px solid transparent;
