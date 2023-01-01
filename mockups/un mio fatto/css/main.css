@@ -38,3 +38,7 @@ p, a, button, .btn, input {
 [class*="btn-outline"] {
     border-color: transparent;
 }
+
+main {
+    height: 3000px;
+}
