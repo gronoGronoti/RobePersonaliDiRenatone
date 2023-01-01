@@ -27,6 +27,8 @@ header {
 .nav-item .nav-link {
     font-weight: 700;
     color: white;
+
+    margin: 0 10px;
 }
 
 .dropdown-item {
