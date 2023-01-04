@@ -14,6 +14,7 @@ console.log("\nla-funzione-che-sembra-difficile.js");
 const gimmeTheNumber = (n, k) => {
   let arr = (String)(n).split("");
   let lung = arr.length;
+  let temp = 0;
 
   if(k>lung) return 0;
   else {
