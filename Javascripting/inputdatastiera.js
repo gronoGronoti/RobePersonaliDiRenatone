@@ -11,7 +11,9 @@ let merdacce = "";
 rl.question("Quante merdacce hai scagato?!!??! ", function(res) {
     merdacce = res;
 
-    console.log("Addirittura", merdacce, "scagazze?!!");
+    if(merdacce == 0) {
+        console.log("ah ok");
+    } else console.log("Addirittura", merdacce, "scagazze?!!");
 
     //chiude lo stream
     rl.close();
