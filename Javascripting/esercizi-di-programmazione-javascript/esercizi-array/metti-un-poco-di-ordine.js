@@ -15,3 +15,35 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//https://www.codingcreativo.it/bubble-sort-in-c/
+
+const sistemaArray = (arr) => {
+  let temp;
+
+  for(let j = 0; j<(arr.length-1); j++) {
+    for (let i = 0; i<(arr.length-1); i++) {
+      if(arr[i] > arr[i+1]) {
+        temp = arr[i];
+        arr[i] = arr[i+1];
+        arr[i+1] = temp;
+      }
+    }
+  }
+  console.log(arr, "// crescente");
+
+  for(let j = 0; j<(arr.length-1); j++) {
+    for (let i = 0; i<(arr.length-1); i++) {
+      if(arr[i] < arr[i+1]) {
+        temp = arr[i];
+        arr[i] = arr[i+1];
+        arr[i+1] = temp;
+      }
+    }
+  }
+  console.log(arr, "// decrescente");
+}
+
+const array = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4];
+
+sistemaArray(array);

@@ -12,3 +12,21 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const esercizioNumeri = (arr) => {
+  let somma = 0, nMinori = [], min = arr[(arr.length)-1];
+
+  arr.forEach(val => {
+    somma += val; // calcola somma
+
+    if(val < min) 
+      nMinori.push(val);
+  });
+  let media = somma / arr.length; // calcola media
+  console.log("Media =", media, "\nvalori minori =", nMinori);
+};
+
+let array = [3, 5, 10, 2, 8];
+
+esercizioNumeri(array);
+console.log(array);
