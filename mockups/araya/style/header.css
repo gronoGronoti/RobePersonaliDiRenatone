@@ -9,10 +9,6 @@
 }
 
 .homepage-head {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: -webkit-fill-available;
 
     height: 465px;
     background-image: url(../img/Lead-Paris-view-point.jpg);
@@ -24,9 +20,6 @@
     z-index: 1;
 }
 .homepage-header {
-    position: fixed;
-    top: 0;
-    width: -webkit-fill-available;
 
     padding: 11px 25px;
     display: flex;
@@ -50,8 +43,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    height: 100%;
 }
 
 .araya-search-bar {

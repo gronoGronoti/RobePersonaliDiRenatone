@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/house-card.css">
-    <link rel="stylesheet" href="style/darker-house-card.css">
+    <link rel="stylesheet" href="style/another-house-card.css">
 </head>
 <body>
     <header>
@@ -230,21 +230,6 @@
         const openInNewTab = (url) => {
             window.open(url, "_blank");
         }
-
-        // rubata da stackoverflow, diminuisce l'height di #scrolling-header
-        // man mano che scrolli la pagina verso il basso;
-        // viceversa la aumenta scrollando verso l'alto.
-        // non so come funziona scrollTop >= 130
-        $(window).on('scroll', function () {
-            var scrollTop = $(window).scrollTop();
-            console.log(scrollTop)
-            if (scrollTop >= 200) {
-                $('#scrolling-header').stop().animate({height: "70px"}, 35);
-            }
-            else {
-                $('#scrolling-header').stop().animate({height: "465px"}, 50);   
-            }
-        });
     </script>
 </body>
 </html>
