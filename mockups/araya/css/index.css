@@ -1,3 +1,7 @@
+main hr {
+    margin: 25px 10px;
+}
+
 .most-rented-title {
     display: flex;
     align-items: baseline;
@@ -15,6 +19,15 @@
     opacity: 40%;
 }
 
+@media (min-width: 360px) and (max-width: 484px) {
+    .most-rented-title {
+        justify-content: space-between;
+    } .most-rented-title h1 {
+        font-size: 20px;
+    } .most-rented-title a {
+        font-size: 12px;
+    }
+}
 @media (min-width: 485px) and (max-width: 684px) {
     .most-rented-title {
         justify-content: space-between;
@@ -46,9 +59,11 @@
         row-gap: 75px;
     }
 }
-@media (max-width: 780px) {
+@media (max-width: 740px) {
     .most-rented-grid {
-        grid-template-columns: 380px;
+        grid-template-columns: 1fr;
+        column-gap: 70px;
         row-gap: 75px;
     }
+
 }
