@@ -50,14 +50,14 @@ main hr {
     justify-content: center;
 }
 
-@media (min-width: 1066px) {
+@media (min-width: 1081px) {
     .most-rented-grid {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 35px;
         row-gap: 40px;
     }
 }
-@media (min-width: 741px) and (max-width: 1065px) {
+@media (min-width: 741px) and (max-width: 1080px) {
     .most-rented-grid {
         grid-template-columns: 1fr 1fr;
         column-gap: 35px;
