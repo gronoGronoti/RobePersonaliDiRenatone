@@ -61,3 +61,7 @@ body {
 } .araya-btn:active {
     opacity: 70%;
 }
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 10%);
+}
