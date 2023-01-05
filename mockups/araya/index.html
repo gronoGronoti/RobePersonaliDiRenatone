@@ -23,7 +23,7 @@
             </div>
 
             <div class="user-section">
-                <span class="material-symbols-outlined" onclick="triggerLoginModal()">
+                <span class="material-symbols-outlined" onclick="triggerModal('.login-modal')">
                     account_circle
                 </span>
             </div>
@@ -178,12 +178,13 @@
     </footer>
 
     <script type="text/javascript">
-        const triggerLoginModal = () => {
-            let visible = document.querySelectorAll(".login-modal")[0].style.opacity;
+        const triggerModal = (str) => {
+
+            let visible = document.querySelectorAll(str)[0].style.opacity;
             
             if(visible != 1) {
-                document.querySelectorAll(".login-modal")[0].style.opacity = "1";
-            } else document.querySelectorAll(".login-modal")[0].style.opacity = "0";
+                document.querySelectorAll(str)[0].style.opacity = "1";
+            } else document.querySelectorAll(str)[0].style.opacity = "0";
         }
     </script>
 </body>
