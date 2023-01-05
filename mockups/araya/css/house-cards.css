@@ -43,10 +43,24 @@
     margin: 6px 0 8px;
 }
 .house-card-type-1 .house-availability, .house-card-type-1 .beds-and-toilets {
-    font-size: 15px;
     opacity: 50%;
-    line-height: 8px;
     margin: 5px 0;
+}
+@media (max-width: 280px) {
+    .house-card-type-1 .house-availability {
+        font-size: 12px;
+        line-height: 4px;
+    }
+    .house-card-type-1 .beds-and-toilets {
+        font-size: 13px;
+        line-height: 4px;
+    }
+}
+@media (min-width: 281px) {
+    .house-card-type-1 .house-availability {
+        font-size: 15px;
+        line-height: 8px;
+    }
 }
 
 .beds-and-toilets {
@@ -97,6 +111,15 @@
     opacity: 40%;
 }
 
+@media (min-width: 280px) and (max-width: 359px) {
+    .most-rented-title {
+        justify-content: space-between;
+    } .most-rented-title h1 {
+        font-size: 16px;
+    } .most-rented-title a {
+        font-size: 10px;
+    }
+}
 @media (min-width: 360px) and (max-width: 484px) {
     .most-rented-title {
         justify-content: space-between;
