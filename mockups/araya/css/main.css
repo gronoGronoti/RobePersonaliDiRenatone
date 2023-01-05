@@ -41,9 +41,15 @@ body {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
     main {
         padding: 40px 100px;
+    }
+}
+
+@media (min-width: 1920px) {
+    main {
+        padding: 40px 150px;
     }
 }
 
