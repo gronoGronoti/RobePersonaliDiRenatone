@@ -1,0 +1,47 @@
+.header-background {
+    background-image: url(../img/Lead-Paris-view-point.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 14px 20px;
+
+    box-shadow: 0 4px 19px rgba(0, 0, 0, 50%);
+
+    /*****************/
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    width: 122px;
+    height: 38px;
+} .site-logo img {
+    width: 100%;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+.user-section .material-symbols-outlined {
+    font-size: 38px;
+    
+    color: white;
+    cursor: pointer;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    transition: text-shadow .15s;
+} .material-symbols-outlined:hover {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+.user-section button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}

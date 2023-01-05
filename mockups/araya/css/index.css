@@ -1,0 +1,54 @@
+.most-rented-title {
+    display: flex;
+    align-items: baseline;
+} .most-rented-title h1 {
+    margin-top: 0;
+    margin-right: 20px;
+} .most-rented-title a {
+    font-weight: 300;
+    color: black;
+    opacity: 60%;
+    text-decoration: none;
+} .most-rented-title a:hover {
+    text-decoration: underline;
+} .most-rented-title a:active {
+    opacity: 40%;
+}
+
+@media (min-width: 485px) and (max-width: 684px) {
+    .most-rented-title {
+        justify-content: space-between;
+    } .most-rented-title h1 {
+        font-size: 24px;
+    } .most-rented-title a {
+        font-size: 14px;
+    }
+}
+@media (min-width: 685px) {
+    .most-rented-title h1 {
+        font-size: 40px;
+    } .most-rented-title a {
+        font-size: 20px;
+    }
+}
+
+.most-rented-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 40px;
+}
+@media (max-width: 1065px) {
+    .most-rented-grid {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 70px;
+        row-gap: 75px;
+    }
+}
+@media (max-width: 780px) {
+    .most-rented-grid {
+        grid-template-columns: 380px;
+        row-gap: 75px;
+    }
+}
