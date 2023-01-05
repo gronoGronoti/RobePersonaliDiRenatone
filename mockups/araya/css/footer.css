@@ -1,0 +1,10 @@
+footer {
+    background-color: rgba(0, 0, 0, 30%);
+    color: white;
+}
+
+.footer-site {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
