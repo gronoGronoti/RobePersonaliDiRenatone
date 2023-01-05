@@ -1,5 +1,5 @@
 main hr {
-    margin: 25px 10px;
+    margin: 30px 5px;
 }
 
 .most-rented-title {
@@ -28,7 +28,7 @@ main hr {
         font-size: 12px;
     }
 }
-@media (min-width: 485px) and (max-width: 684px) {
+@media (min-width: 485px) and (max-width: 739px) {
     .most-rented-title {
         justify-content: space-between;
     } .most-rented-title h1 {
@@ -37,7 +37,7 @@ main hr {
         font-size: 14px;
     }
 }
-@media (min-width: 685px) {
+@media (min-width: 740px) {
     .most-rented-title h1 {
         font-size: 40px;
     } .most-rented-title a {
@@ -48,20 +48,25 @@ main hr {
 .most-rented-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 35px;
-    row-gap: 40px;
 }
-@media (max-width: 1065px) {
+
+@media (min-width: 1066px) {
+    .most-rented-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 35px;
+        row-gap: 40px;
+    }
+}
+@media (min-width: 741px) and (max-width: 1065px) {
     .most-rented-grid {
         grid-template-columns: 1fr 1fr;
-        column-gap: 70px;
-        row-gap: 75px;
+        column-gap: 35px;
+        row-gap: 40px;
     }
 }
 @media (max-width: 740px) {
     .most-rented-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 380px;
         column-gap: 70px;
         row-gap: 75px;
     }
