@@ -7,24 +7,66 @@
     <title>Araya</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/house-cards.css">
     <link rel="stylesheet" href="css/footer.css">
+
 </head>
-<bod class="bg-gradient">
+<body>
     <header>
-        <div class="header-background container-xxl">
+        <div class="header-background">
             <div class="site-logo">
                 <a href="#"><img src="img/logo/logo-white.png"></a> 
             </div>
 
             <div class="user-section">
-                <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined" onclick="triggerLoginModal()">
                     account_circle
                 </span>
+            </div>
+        </div>
+
+        <div class="login-modal">
+            <p>
+                Don't have an account? <a class="sign-up-a" href="#">Sign up</a>
+            </p>
+
+            <div class="email-sec">
+                <p>E-mail</p>
+                <input type="text">
+            </div>
+
+            <div class="password-sec">
+                <p>Password</p>
+                <div class="input-and-login">
+                    <input type="password">
+                    <a href="#">
+                        <button>
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="login-w-apps-section">
+                <p>Login with</p>
+
+                <div class="apps">
+                    <a href="" class="social" title="Login with Facebook">
+                        <img src="img/social-logos/icons8-facebook-cerchiato-48.png">
+                    </a>
+                    <a href="" class="social" title="Login with Google">
+                        <img src="img/social-logos/icons8-logo-di-google-48.png">
+                    </a>
+                    <a href="" class="social" title="Login with Twitter">
+                        <img src="img/social-logos/icons8-twitter-48.png">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -135,6 +177,14 @@
         </div>
     </footer>
 
-    
+    <script type="text/javascript">
+        const triggerLoginModal = () => {
+            let visible = document.querySelectorAll(".login-modal")[0].style.opacity;
+            
+            if(visible != 1) {
+                document.querySelectorAll(".login-modal")[0].style.opacity = "1";
+            } else document.querySelectorAll(".login-modal")[0].style.opacity = "0";
+        }
+    </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 header {
     width: -webkit-fill-available;
+    position: relative;
 }
 
 .header-background {
@@ -40,12 +41,102 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 
     transition: text-shadow .15s;
-} .material-symbols-outlined:hover {
+} .user-section .material-symbols-outlined:hover {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
-.user-section button {
+ 
+/***********************************************************************************/
+
+.login-modal {
+    display: inline-block;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 35%);
+    background-color: white;
+    border-radius: 5px;
+    opacity: 0;
+
+    position: absolute;
+
+    z-index: 10;
+    right: 23px;
+    top: 57px;
+}
+
+.login-modal p, .login-modal a {
     margin: 0;
-    padding: 0;
+    margin-bottom: 8px;
+}
+.login-w-apps-section p {
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+.email-sec input {
+    margin-bottom: 8px;
+}
+
+.login-modal .sign-up-a {
+    color: #5a89e1;
+    text-decoration: none;
+    font-style: italic;
+} .login-modal .sign-up-a:hover {
+    text-decoration: underline;
+} .login-modal .sign-up-a:active {
+    opacity: 60%;
+}
+
+.apps img {
+    margin: 0;
+    width: 36px;
+    padding: 5px;
+    border-radius: 25px;
+
+    transition: all .15s;
+} .apps img:active {
+    background-color: #D9D9D9;
+} .apps a {
+    margin: 0;
+}
+
+.login-w-apps-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.login-w-apps-section .apps .social {
+    text-decoration: none;
+    margin: 0 8px; 
+}
+
+.login-modal input {
     border: none;
-    background: none;
+    background: #D9D9D9;
+    width: -webkit-fill-available;
+    padding: 8px;
+    border-radius: 20px;
+    padding-left: 13px;
+}
+
+.input-and-login {
+    display: flex;
+} .input-and-login input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+} .input-and-login button {
+    color: white;
+    background-color: #70A2FF;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+} .input-and-login button:active {
+    opacity: 60%;
+}
+
+.input-and-login a {
+    margin: 0;
+}
+.input-and-login button span {
+    margin-top: 3px;
+    margin-right: 2px;
 }
