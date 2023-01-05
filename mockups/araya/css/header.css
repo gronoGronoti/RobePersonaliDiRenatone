@@ -142,3 +142,19 @@ header {
     margin-top: 3px;
     margin-right: 2px;
 }
+
+.password-sec .forgot-pass {
+    margin-top: 3px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: end;
+    
+    font-size: 11px;
+    text-decoration: none;
+    opacity: 75%;
+} .password-sec .forgot-pass:hover {
+    text-decoration: underline;
+}
+.password-sec .forgot-pass:active {
+    opacity: 60%;
+}
