@@ -1,3 +1,7 @@
+header {
+    width: -webkit-fill-available;
+}
+
 .header-background {
     background-image: url(../img/paris_upscaled.jpeg);
 

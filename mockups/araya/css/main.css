@@ -22,20 +22,13 @@ body {
     margin: 0;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 360px) and (max-width: 739px) {
     main {
         padding: 20px;
         padding-top: 40px;
     }
 }
-@media (min-width: 1000px) {
-    main {
-        padding: 40px;
-        padding-top: 40px;
-    }
-}
-
-@media (min-width: 1266px) and (max-width: 1599px) {
+@media (min-width: 740px) and (max-width: 1599px) {
     main {
         padding: 40px;
     }
