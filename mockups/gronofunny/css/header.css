@@ -1,0 +1,70 @@
+header {
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0;
+    left: 0;
+
+    margin: 0;
+
+    background-color: #242424;
+    border-bottom: 0.2rem solid #363636;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: -4px;
+}
+
+.head-btns {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+} .head-btns li {
+    float: left;
+    transition: background-color .15s;
+} .head-btns li:hover {
+    background-color: #303030;
+} .head-btns li:active, .head-btns .active {
+    background-color: #363636;
+} 
+
+.head-btns li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.write-date-here {
+    margin: 0 20px;
+}
+
+@media (min-width: 571px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 280px) and (max-width: 570px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    header p {
+        text-align: center;
+        padding: 8px;
+        margin: 0;
+    }
+    .head-btns ul {
+        text-align: center;
+    }
+}
+@media (min-width: 280px) and (max-width: 318px) {
+    .head-btns li a {
+        padding: 8px 10px;
+    }
+}

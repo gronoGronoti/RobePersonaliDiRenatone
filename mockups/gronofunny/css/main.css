@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+p, a, button, .btn, input {
+    font-family: 'Public Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+body {
+    background: #242424;
+    height: 2000px;
+}
+
+@media (min-width: 280px) and (max-width: 320px) {
+    body {
+        margin-top: 85px;
+        padding: 0 20px;
+    }
+}
+@media (min-width: 321px) and (max-width: 570px) {
+    body {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+}
+@media (min-width: 571px) {
+    body {
+        margin-top: 60px;
+        padding: 0 20px;
+    }
+}

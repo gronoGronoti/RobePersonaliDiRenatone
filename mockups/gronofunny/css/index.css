@@ -1,0 +1,68 @@
+.lollismo-1 {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.print-modal {
+    z-index: 100;
+
+    /*centra pos relative*/
+    position: relative;
+
+    opacity: 1;
+
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+.print-modal p {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.print-modal .click {
+    background-color: #325ba7;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    
+    transition: all .15s;
+} .print-modal .click:hover {
+    background-color: #325ba799;
+} .print-modal .click:active {
+    background-color: #5a89e1;
+}
+
+.print-modal .material-symbols-outlined {
+    float: right;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+} .print-modal .material-symbols-outlined:active {
+    opacity: 25%;
+}
+
+.logo-page {
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    column-gap: 30px;
+    align-items: center;
+} .logo-page img {
+    width: 100%;
+}
+
+.logo-page hr {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}

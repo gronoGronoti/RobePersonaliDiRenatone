@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il gronofunny</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body onload="stampaOrario()">
+    <header>
+        <div class="site-header">
+            <ul class="head-btns">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+
+        <p class="write-date-here">Oggi è...</p>
+    </header>
+    
+    <main>
+        <div class="lollismo-1">
+            <div class="print-modal">
+                <div class="close-btn">
+                    <span class="material-symbols-outlined" onclick="triggerPublicityModal('.print-modal', '.lollismo-1')">
+                        cancel
+                    </span>
+                </div>
+    
+                <p>Clicca qui per stampare questa pagina!</p>
+                <button class="click" onclick="printPagina()">Cliccami dio</button>
+            </div>
+        </div>
+
+        <section class="logo-page">
+            <div>
+                <hr>
+            </div>
+            <img src="img/logo/logo.png" class="site-logo">
+            <div>
+                <hr>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="js/mainScripts.js"></script>
+</body>
+</html>
