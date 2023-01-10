@@ -7,9 +7,7 @@ h1, h2, h3, h4, h5, h6 {
     color: whitesmoke;
 }
 
-p, a, button, .btn, input {
-    font-family: 'Public Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
+a, p {
     color: whitesmoke;
 }
 
@@ -24,21 +22,11 @@ p, a, button, .btn, input {
 body {
     background: #242424;
     height: 2000px;
+    font-family: 'Public Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
 }
 
-@media (min-width: 280px) and (max-width: 285px) {
-    body {
-        margin-top: 97px;
-        padding: 0 20px;
-    }
-}
-@media (min-width: 285px) and (max-width: 320px) {
-    body {
-        margin-top: 85px;
-        padding: 0 20px;
-    }
-}
-@media (min-width: 321px) and (max-width: 602px) {
+@media (min-width: 280px) and (max-width: 602px) {
     body {
         margin-top: 100px;
         padding: 0 20px;
@@ -49,4 +37,20 @@ body {
         margin-top: 60px;
         padding: 0 20px;
     }
+}
+
+.merdammerda {
+    background-color: #5a89e1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .15s;
+} .merdammerda:active {
+    opacity: 75%;
+}
+
+.huge {
+    font-size: 10rem;
 }
