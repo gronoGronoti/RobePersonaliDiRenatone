@@ -26,7 +26,13 @@ body {
     height: 2000px;
 }
 
-@media (min-width: 280px) and (max-width: 320px) {
+@media (min-width: 280px) and (max-width: 285px) {
+    body {
+        margin-top: 97px;
+        padding: 0 20px;
+    }
+}
+@media (min-width: 285px) and (max-width: 320px) {
     body {
         margin-top: 85px;
         padding: 0 20px;
