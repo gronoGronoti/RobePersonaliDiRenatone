@@ -32,13 +32,13 @@ body {
         padding: 0 20px;
     }
 }
-@media (min-width: 321px) and (max-width: 570px) {
+@media (min-width: 321px) and (max-width: 602px) {
     body {
         margin-top: 100px;
         padding: 0 20px;
     }
 }
-@media (min-width: 571px) {
+@media (min-width: 603px) {
     body {
         margin-top: 60px;
         padding: 0 20px;
