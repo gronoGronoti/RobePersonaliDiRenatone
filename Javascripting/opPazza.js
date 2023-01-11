@@ -5,4 +5,4 @@ const func = (a, b, c, d, e, f) => {
     return Math.pow(((((a+b)-c) * d) / e), f);
 }
 
-console.log(func(10,5,6,9,3,2))
+console.log(func(10,5,6,9,3,2));
