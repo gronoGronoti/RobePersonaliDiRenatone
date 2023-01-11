@@ -1,56 +1,74 @@
+const playDrum = (key) => {
+    let audio;
+
+    switch(key) {
+        case 'w':
+            audio = new Audio("sounds/tom-1.mp3");
+            audio.play();
+            break;
+
+        case 'a':
+            audio = new Audio("sounds/tom-2.mp3");
+            audio.play();
+            break;
+
+        case 's':
+            audio = new Audio("sounds/tom-3.mp3");
+            audio.play();
+            break;
+
+        case 'd':
+            audio = new Audio("sounds/tom-4.mp3");
+            audio.play();
+            break;
+
+        case 'j':
+            audio = new Audio("sounds/snare.mp3");
+            audio.play();
+            break;
+
+        case 'k':
+            audio = new Audio("sounds/crash.mp3");
+            audio.play();
+            break;
+
+        case 'l':
+            audio = new Audio("sounds/kick-bass.mp3");
+            audio.play();
+            break;
+
+        default:
+            console.log("Errore.");
+            break;
+    }
+}
+
+const animateBtn = (key) => {
+    let elem = document.querySelector("."+key);
+
+    if (elem.style.color != "white") {
+        elem.style.color = "white";
+        setTimeout(() => {elem.style.color = "#DA0463"; }, 1000); // aspetta 1 secondo e cambia colore
+    }
+}
+
 let btns = document.querySelectorAll(".drum");
 
+// per premuta col mouse
 btns.forEach(elem => {
     elem.addEventListener("click", handleClick = () => {
-        let audio;
+        let btnInnerHTML = elem.innerHTML;
 
-        switch(elem.textContent) {
-            case 'w':
-                audio = new Audio("sounds/tom-1.mp3");
-                audio.play();
-                break;
+        playDrum(btnInnerHTML);
 
-            case 'a':
-                audio = new Audio("sounds/tom-2.mp3");
-                audio.play();
-                break;
+        animateBtn(btnInnerHTML);
+    })
+})
 
-            case 's':
-                audio = new Audio("sounds/tom-3.mp3");
-                audio.play();
-                break;
+// per premuta coi tasti della tastiera
+document.addEventListener("keydown", handlePress = (event) => {
 
-            case 'd':
-                audio = new Audio("sounds/tom-4.mp3");
-                audio.play();
-                break;
+    playDrum(event.key);
 
-            case 'j':
-                audio = new Audio("sounds/snare.mp3");
-                audio.play();
-                break;
-
-            case 'k':
-                audio = new Audio("sounds/crash.mp3");
-                audio.play();
-                break;
-
-            case 'l':
-                audio = new Audio("sounds/kick-bass.mp3");
-                audio.play();
-                break;
-
-            default:
-                console.log("Errore.");
-                break;
-        }
-
-        // let audio = new Audio("sounds/"+sample+".mp3");
-        // audio.play();
-
-        if (elem.style.color != "white") {
-            elem.style.color = "white";
-            setTimeout(() => {elem.style.color = "#DA0463"; }, 1000); // aspetta 1 secondo e cambia colore
-        }
-    });
-});
+    animateBtn(event.key);
+})
