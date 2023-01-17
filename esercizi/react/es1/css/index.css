@@ -2,24 +2,34 @@
     color: red;
   }
   
-  .images {
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1;
-  }
-  .images .dish {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+.images .dish {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   
-    cursor: pointer;
-  }
-  .images img {
-    width: 100px;
-    height: 100px;
+  cursor: pointer;
+}
+.images img {
+  width: 100px;
+  height: 100px;
   
-    object-fit: cover;
+  object-fit: cover;
   
-    margin: 5px;
-  }
+  margin: 5px;
+}
   
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+} footer p {
+  line-height: 5px;
+}

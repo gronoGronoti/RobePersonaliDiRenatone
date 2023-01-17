@@ -54,3 +54,14 @@ ReactDOM.createRoot(foodDiv).render(
     </ul>
   </section>
 );
+
+let footerSec = document.getElementsByTagName("footer")[0];
+
+let anno = new Date().getUTCFullYear();
+
+ReactDOM.createRoot(footerSec).render(
+  <section>
+    <p>{ `${nome} ${cognome}` }</p>
+    <p>(C) {`${anno}`}</p>
+  </section>
+);
