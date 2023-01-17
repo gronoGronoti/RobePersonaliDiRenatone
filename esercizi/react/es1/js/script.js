@@ -18,19 +18,27 @@ ReactDOM.createRoot(rootDiv).render(
     <div className="images">
       <div className="dish">
         <img src={url1} alt="pasta" />
-        <p>{Math.round(Math.random() * 25)}</p>
+        <p>{Math.round(Math.random() * 25)} €</p>
       </div>
 
       <div className="dish">
         <img src={url2} alt="meat" />
-        <p>{Math.round(Math.random() * 25)}</p>
+        <p>{Math.round(Math.random() * 25)} €</p>
       </div>
 
       <div className="dish">
         <img src={url3} alt="ice-cream" />
-        <p>{Math.round(Math.random() * 25)}</p>
+        <p>{Math.round(Math.random() * 25)} €</p>
       </div>
     </div>
+  </section>
+);
+
+let luckyNumDiv = document.getElementsByClassName("lucky-num")[0];
+
+ReactDOM.createRoot(luckyNumDiv).render(
+  <section>
+    <p>{nome}, il tuo numero fortunato oggi è: {Math.round(Math.random() * 30)}</p>
   </section>
 );
 
