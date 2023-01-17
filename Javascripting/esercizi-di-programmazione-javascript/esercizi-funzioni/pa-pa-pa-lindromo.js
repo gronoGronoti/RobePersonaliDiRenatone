@@ -17,30 +17,28 @@
 console.log("\npa-pa-pa-lindromo.js");
 
 const dividiStr = (str, i) => {
-  return res = [(str.length%2==0)? str.slice(0,i): str.slice(0,i+1)
-  /*se str.length%2!  =0, aggiungere un carattere in più a str1*/, str.slice(i)];
+  return res = [(str.length%2 === 0)? str.slice(0,i): str.slice(0,i+1), str.slice(i)];
+  /*se str.length%2!=0, aggiungere un carattere in più a str1*/
 };
 const invertiStr = (str) => {
   let temp = str.split("");   // split("") divide str in un array di caratteri tra doppi apici
   let temp2 = temp.reverse(); // reverse inverte i caratteri splittati
-  str = temp2.join("");       // join("") unisce in una stringa i caratteri divisi tra doppi apici
-  
-  return str;
+  return temp2.join("");       // join("") unisce in una stringa i caratteri divisi tra doppi apici
 };
 
 let stringa = "i topi non avevano nipoti";
 
 //tolgo gli spazi dalla stringa
 stringa = stringa.replace(/\W/g, "");
-console.log(stringa);
+console.log( stringa );
 
 //divido stringa in due
 let [str1, str2] = dividiStr(stringa, (stringa.length/2));
-console.log(str1, str2);
+console.log( str1, str2 );
 
 //inverto i caratteri in str2
-str2 = invertiStr(str2);
-console.log(str2);
+str2 = invertiStr( str2 );
+console.log( str2, "<== (questa stringa è str2 invertita)" );
 
 let verifica = (str1 == str2)? true: false;
-console.log(verifica);
+console.log( verifica );
