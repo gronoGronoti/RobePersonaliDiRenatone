@@ -1,0 +1,25 @@
+.titulo {
+    color: red;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+  .images .dish {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    cursor: pointer;
+  }
+  .images img {
+    width: 100px;
+    height: 100px;
+  
+    object-fit: cover;
+  
+    margin: 5px;
+  }
+  
