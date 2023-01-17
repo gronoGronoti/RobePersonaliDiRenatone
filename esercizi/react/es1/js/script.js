@@ -13,7 +13,7 @@ let rootDiv = document.getElementById("root");
 
 ReactDOM.createRoot(rootDiv).render(
   <section>
-    <h1 className="titulo">ciao {nome + " " + cognome}</h1>
+    <h1 className="titulo">ciao { `${nome} ${cognome}` }</h1>
 
     <div className="images">
       <div className="dish">
@@ -38,7 +38,7 @@ let luckyNumDiv = document.getElementsByClassName("lucky-num")[0];
 
 ReactDOM.createRoot(luckyNumDiv).render(
   <section>
-    <p>{nome}, il tuo numero fortunato oggi è: {Math.round(Math.random() * 30)}</p>
+    <p>{`${nome}, il tuo numero fortunato oggi è: ${Math.round(Math.random() * 30)}`}</p>
   </section>
 );
 
