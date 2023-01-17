@@ -1,20 +1,20 @@
+const stampaPattern = () => {
+    return Math.round(Math.random() * (37-23) + 23);
+}
+const stampaVariazione = () => {
+    return Math.round(Math.random() * 8);
+}
+
 // (Math.random() * (max-min) + min)
 let n;
 
-for(i=1; i<=4; i++) {
+for(i=1; i<=5; i++) {
     switch(i) {
-        case 1:
-            n = Math.round(Math.random() * (37-23) + 23);
-            break;
-        case 2:
-            n = Math.round(Math.random() * (8-1) + 1);
-            break;
-        case 3:
-            n = Math.round(Math.random() * (37-23) + 23);
-            break;
-        case 4:
-            n = Math.round(Math.random() * (8-1) + 1);
+        case i:
+            if (i != 5) console.log( (i%2 == 0)? stampaVariazione() : stampaPattern() );
+
+            else console.log( "Pattern:", Math.ceil(Math.random() * 7) );
+
             break;
     }
-    console.log(n)
 }
