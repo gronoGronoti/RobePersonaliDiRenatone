@@ -5,9 +5,6 @@ const stampaVariazione = () => {
     return Math.round(Math.random() * 8);
 }
 
-// (Math.random() * (max-min) + min)
-let n;
-
 for(i=1; i<=5; i++) {
     switch(i) {
         case i:
