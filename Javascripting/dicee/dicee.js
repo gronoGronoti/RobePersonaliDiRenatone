@@ -1,7 +1,13 @@
-const rollTheDice = (res) => {
-    return "images/dice"+res+".png";
-}
-const checkWhoWon = (string) => {
+
+const checkWhoWon = () => {
+    let string;
+    if(document.querySelector(".img1").getAttribute("src") === document.querySelector(".img2").getAttribute("src")) {
+        string = 'draw'
+    } else if (document.querySelector(".img1").getAttribute("src") > document.querySelector(".img2").getAttribute("src")) {
+        string = 'won'
+    } else
+        string = 'lost'
+
     switch(string.toLowerCase()) {
         case 'won':
             document.querySelector(".container h1").innerHTML = "You Won! 🤪";
@@ -17,17 +23,14 @@ const checkWhoWon = (string) => {
     }
 }
 
-let r1 = rollTheDice(Math.ceil(Math.random()*6));
-let r2 = rollTheDice(Math.ceil(Math.random()*6));
+const rollTheDice = () => {
+    let res = Math.ceil(Math.random()*6);
+    return "images/dice"+res+".png";
+}
+const setAttributes = (string) => {
+    let cl = "." + string;
+    let str = rollTheDice();
+    console.log(cl, str);
 
-let img1 = document.querySelectorAll(".dice.img1");
-img1.setAttribute("src", r1);
-
-let img2 = document.querySelectorAll(".dice.img2");
-img2.setAttribute("src", r2);
-
-//document.querySelector('.img1').setAttribute('src', rollTheDice())
-//document.querySelector('.img2').setAttribute('src', rollTheDice())
-
-//document.querySelector('.img1').style.cursor = 'pointer'
-//document.querySelector('.img2').style.cursor = 'pointer'
+    document.querySelector(cl).setAttribute("src", str);
+}

@@ -44,3 +44,22 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+
+.button-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.click-and-roll {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #5a89e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity .15s;
+} .click-and-roll:active {
+  opacity: 60%;
+}
