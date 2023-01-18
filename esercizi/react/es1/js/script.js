@@ -58,10 +58,15 @@ ReactDOM.createRoot(foodDiv).render(
 let footerSec = document.getElementsByTagName("footer")[0];
 
 let anno = new Date().getUTCFullYear();
+let instaUrl = 
+  "https://www.instagram.com/gronotheftauto/";
 
 ReactDOM.createRoot(footerSec).render(
   <section>
-    <p>{ `${nome} ${cognome}` }</p>
+    <p>
+      { `${nome} ${cognome}` } -
+      <a href={instaUrl} target="_blank"> @gronotheftauto</a>
+    </p>
     <p>(C) {`${anno}`}</p>
   </section>
 );
